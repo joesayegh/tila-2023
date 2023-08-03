@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tila Studio - Home</title>
+
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+		<!-- SWIPER -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+		<!-- STYLESHEET -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!-- FAVICON -->
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="img/favicon/manifest.json" />
+		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#101728" />
+		<meta name="msapplication-TileColor" content="#defe55" />
+	</head>
+	<body id="home">
+		<header class="header">
+			<div class="container padding">
+				<div class="header__flex">
+					<div class="header__logo">
+						<a href="/">
+							<img src="img/logo.svg" alt="Tila Studio Logo" />
+						</a>
+					</div>
+					<div class="header__nav desktop-only">
+						<nav class="primary" aria-label="primary">
+							<ul>
+								<li class="buyGiftcards"><a href="javascript:void(0)" onclick="saloniq.loader.openGiftCards2()">Giftcard</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#team">Team</a></li>
+								<li><a href="#policies">T&amp;C</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<!-- MOBILE MENU -->
+					<div class="mobile-only">
+						<button id="menu-btn" class="hamburger" type="button" aria-controls="mobile-navigation" aria-expanded="false">
+							<span class="visually-hidden">Menu</span>
+							<span class="hamburger-top"></span>
+							<span class="hamburger-middle"></span>
+							<span class="hamburger-bottom"></span>
+						</button>
+
+						<nav id="mobile-menu" class="mobile-main-menu">
+							<div class="mobile-main-menu-flex">
+								<!-- PRIMARY -->
+								<ul class="primary">
+									<li class="buyGiftcards"><a href="javascript:void(0)" onclick="saloniq.loader.openGiftCards2()">Giftcard</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#team">Team</a></li>
+									<li><a href="#policies">T&amp;C</a></li>
+									<li><a href="#contact">Contact</a></li>
+									<!-- SOCIAL -->
+									<li>
+										<ul class="social">
+											<li>
+												<a href="https://www.instagram.com/tilastudio/" target="_blank" aria-label="Instagram Link(Opens in a new tab)">
+													<img src="img/instagram.svg" alt="Instagram Icon" />
+												</a>
+											</li>
+											<li>
+												<a href="https://en-gb.facebook.com/TilaStudio/" target="_blank" aria-label="Facebook Link(Opens in a new tab)">
+													<img src="img/facebook.svg" alt="Facebook Icon" />
+												</a>
+											</li>
+											<li>
+												<a href="http://wa.link/lsn7fp" target="_blank" aria-label="YouTube Link(Opens in a new tab)">
+													<img src="img/whatsapp.svg" alt="YouTube Icon" />
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section id="hero">
+			<div class="hero-slider">
+				<div class="hero-slider__swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/tila-salon-interior-2022.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="img/new-clients-offer_v2-min.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="img/jan_promo_80-min.jpg" alt="" /></div>
+						<div class="swiper-slide"><img src="img/gift-certificate-bow.jpg" alt="" /></div>
+					</div>
+
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="book-online-salon-iq">
+			<div class="bg-dark-grey">
+				<div class="container padding">
+					<div class="book-block">
+						<div class="book-block-text">
+							<h3 class="mb-0">Book online today</h3>
+						</div>
+
+						<div class="book-block-button">
+							<p class="mb-0">
+								<a href="javascript:void(0)" onclick="saloniq.loader.openIFrame()">
+									<button class="btn btn-clear">CLICK HERE</button>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="intro">
+			<div class="container padding pt-16 pb-16">
+				<div class="wow fadeIn intro-block" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn">
+					<p>TILA STUDIO is an exciting, independent hair and make-up salon that first opened in December 2014. We’re located in West Hampstead, Fortune Green Road, London NW6.</p>
+					<p>We provide a warm and friendly atmosphere offering bespoke services using only the best products on the market and first class customer service. We specialise in Cutting, Colouring, Balayage, Olaplex, Keratin treatment, Make-up, Wedding Packages and Hair ups that are tailored to your individual needs. We offer premium haircare products such as Goldwell, Kerasilk, KMS, Olaplex and Morrocan Oil. We support hair care brands that we consider to be the best in the business.</p>
+					<p>
+						<a href="#services" class="btn btn-arrow-right no-padding" aria-label="Go to services">
+							<span>VIEW SERVICES</span>
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.46 720">
+								<path d="M49.92,0h2.62c12.85,.27,25.52,5.49,34.7,14.5,100.83,100.81,201.65,201.64,302.47,302.46,4.49,4.6,9.41,8.88,12.96,14.29,8.36,12.29,10.99,28.31,6.87,42.6-2.35,8.55-7.01,16.43-13.31,22.67-102.65,102.66-205.31,205.29-307.95,307.96-9.09,9.41-21.85,15-34.91,15.52h-3.42c-13.77-.39-27.26-6.51-36.48-16.75-10.61-11.44-15.45-27.92-12.73-43.28,1.77-10.66,7.03-20.68,14.78-28.21,90.59-90.59,181.18-181.16,271.75-271.76C198.2,270.9,109.1,181.83,20.02,92.74c-2.83-2.87-5.8-5.63-8.38-8.74C3.84,74.56-.35,62.23,.03,50,.34,37.31,5.57,24.8,14.44,15.71,23.61,6.08,36.64,.4,49.92,0Z" />
+							</svg>
+						</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="promise">
+			<div class="container padding text-center pt-16 pb-16">
+				<div class="wow fadeIn" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn">
+					<h2>OUR PROMISE</h2>
+					<p>We promise to treat you as a guest in our home</p>
+					<p>All our staff are friendly, Knowledgeable and highly skilled</p>
+					<p>We will only recommend products and services that meet your needs</p>
+					<p>We will work together to give you the best cut, colour and make up to suit your requirements</p>
+					<p>We promise to give you an in-depth consultation at every visit</p>
+					<p>We respect your time, and will attend to you promptly.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="make-an-appointment">
+			<div class="bg-dark-grey">
+				<div class="container padding">
+					<div class="book-block">
+						<div class="book-block-text">
+							<h3 class="mb-0">Make an appointment</h3>
+						</div>
+
+						<div class="book-block-button">
+							<p class="mb-0">
+								<a href="tel:02079981470">
+									<button class="btn btn-clear">0207 9981 470</button>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="team">
+			<div class="container padding">
+				<div class="team">
+					<h2>Meet the Team</h2>
+				</div>
+
+				<!-- TEAM -->
+				<div class="team__content">
+					<div class="team__content-item">
+						<div class="image">
+							<img src="img/tila.jpg" alt="Tila" loading="lazy" />
+						</div>
+						<div class="text">
+							<h4 class="name">Tila</h4>
+							<p class="title">Director</p>
+							<button class="btn btn btn-primary team__modal-link" onclick="openModal();currentSlide(1)">READ MORE</button>
+						</div>
+					</div>
+
+					<div class="team__content-item">
+						<div class="image">
+							<img src="img/adela.jpg" alt="Adela" loading="lazy" />
+						</div>
+						<div class="text">
+							<h4 class="name">Adela</h4>
+							<p class="title">Director</p>
+							<button class="btn btn btn-primary team__modal-link" onclick="openModal();currentSlide(2)">READ MORE</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- MODAL / LIGHTBOX -->
+				<div id="teamModal" class="modal">
+					<div class="modal-content">
+						<div class="mySlides">
+							<div id="tila">
+								<div class="text">
+									<h4 class="name">Tila</h4>
+									<p>Meet our master hair stylist and owner of Tila hair studio, Tila. Tila started her passion in this exciting and trendy industry 15 years ago whilst working at Toni & Guy where she originally trained. Being one of the most prestigious salons in the world, Tila's talent grew rapidly making her the hair guru she is today.</p>
+
+									<p>With a desire to be successful, Tila opened her own salon in West Hampstead in 2014 and ever since has attracted a fantastic clientele both local and international. A wonderful eye for detail ensures your colour is perfect every time you leave the salon.</p>
+
+									<p>Tila specialises in colour, cut, up styles and Extensions. We ensure you will always leave looking beautiful. And don't worry, whether your hair is fine, straight or curly, her techniques are mastered for all!</p>
+								</div>
+
+								<div class="text-center pb-12">
+									<button class="btn btn btn-primary" onclick="closeModal()">CLOSE</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="mySlides">
+							<div id="adela">
+								<div class="text">
+									<h4 class="name">Adela</h4>
+									<p>Adela joined Tila Studio in 2016 and has attracted a vibrant and loyal clientele both locally and nationally.</p>
+
+									<p>Another string to her bow was her recent completion of her master colour course, bringing you the latest trends in colour.</p>
+
+									<p>Whether it's styling, blowdrys, cut or colour you're after, you are in really talented hands. Adela is known to always exceed clients expectations with classic skill and modern techniques. From balayage to highlights or crazy colours, her eye for detail will leave you looking glam.</p>
+								</div>
+
+								<div class="text-center pb-12">
+									<button class="btn btn btn-primary" onclick="closeModal()">CLOSE</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- NEXT/PREVIOUS BUTTONS -->
+						<!-- <button class="prev" onclick="plusSlides(-1)">Back</button> -->
+						<!-- <button class="next" onclick="plusSlides(1)">Next</button> -->
+
+						<!-- CLOSE BUTTON -->
+						<button class="close cursor" onclick="closeModal()" aria-label="Close">&times;</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact-us-on-whatsapp">
+			<div class="bg-dark-grey">
+				<div class="container padding">
+					<div class="book-block">
+						<div class="book-block-text">
+							<h3 class="mb-0">CONTACT US ON WHATSAPP</h3>
+						</div>
+
+						<div class="book-block-button">
+							<p class="mb-0">
+								<a href="http://wa.link/lsn7fp">
+									<button class="btn btn-clear">CLICK HERE</button>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="email-us">
+			<div class="bg-dark-grey">
+				<div class="container padding">
+					<div class="book-block">
+						<div class="book-block-text">
+							<h3 class="mb-0">CHECK AVAILABILITY NOW</h3>
+						</div>
+
+						<div class="book-block-button">
+							<p class="mb-0">
+								<a href="mailto:info@tilahairstudio.com">
+									<button class="btn btn-clear">EMAIL US</button>
+								</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="social">
+			<div class="social-media-bg">
+				<div class="container pt-32 pb-32">
+					<div class="social-media text-white">
+						<div class="social-media-flex">
+							<div class="social-media-flex-item">
+								<h2 class="title">Let's be social</h2>
+							</div>
+
+							<div class="social-media-flex-item">
+								<ul class="social">
+									<li>
+										<a href="https://www.instagram.com/tilastudio/" target="_blank" aria-label="Instagram Link(Opens in a new tab)">
+											<img src="img/instagram.svg" alt="Instagram Icon" />
+										</a>
+									</li>
+									<li>
+										<a href="https://en-gb.facebook.com/TilaStudio/" target="_blank" aria-label="Facebook Link(Opens in a new tab)">
+											<img src="img/facebook.svg" alt="Facebook Icon" />
+										</a>
+									</li>
+									<li>
+										<a href="http://wa.link/lsn7fp" target="_blank" aria-label="YouTube Link(Opens in a new tab)">
+											<img src="img/whatsapp.svg" alt="YouTube Icon" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="testimonials">
+			<div class="bg-cod-grey text-white text-center">
+				<div class="testimonials">
+					<div class="testimonials-slider pt-16 pb-16">
+						<h2>Testimonials</h2>
+						<div class="testimonials-slider__swiper swiper pt-8 pb-24">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<figure>
+										<blockquote>
+											<p>Excellent quality, amazing prices</p>
+										</blockquote>
+										<figcaption><cite>Dafina Zhubi</cite></figcaption>
+									</figure>
+								</div>
+								<div class="swiper-slide">
+									<figure>
+										<blockquote>
+											<p>Amazing service, amazing cut and colour</p>
+										</blockquote>
+										<figcaption><cite>Teresa Arcadipane</cite></figcaption>
+									</figure>
+								</div>
+								<div class="swiper-slide">
+									<figure>
+										<blockquote>
+											<p>I had a great head massage and a superb haircut</p>
+										</blockquote>
+										<figcaption><cite>Joseph Sayegh</cite></figcaption>
+									</figure>
+								</div>
+							</div>
+
+							<!-- PAGINATION -->
+							<div class="swiper-pagination testimonials-slider__swiper-pagination"></div>
+
+							<!-- AUTOPLAY PROGRESS -->
+							<div class="autoplay-progress">
+								<svg viewBox="0 0 48 48">
+									<circle cx="24" cy="24" r="20"></circle>
+								</svg>
+								<span></span>
+							</div>
+						</div>
+
+						<div class="testimonials-read-more">
+							<a href="https://www.google.com/search?q=Tila+Studio+Hair+%26+Makeup&amp;ludocid=4574812023654138167#lrd=0x0:0x3f7cff4c10174137,1" target="_blank">Click here to read more reviews</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="contact">
+			<div class="bg-cod-grey text-dusty-grey">
+				<div class="container padding">
+					<div class="contact pt-8 pb-8">
+						<div class="contact-flex">
+							<div class="contact-flex-item">
+								<h3>Contact Us</h3>
+								<p>
+									<a href="https://goo.gl/maps/g4cMQfmEoEF2" target="_blank">
+										78 Fortune Green Road<br />
+										London NW6 1DS
+									</a>
+								</p>
+								<p><a href="tel:02079981470">0207 9981 470</a></p>
+								<p><a href="mailto:info@tilahairstudio.com">info@tilahairstudio.com</a></p>
+								<p><a href="http://wa.link/lsn7fp">Click here for WhatsApp</a></p>
+							</div>
+
+							<div class="contact-flex-item">
+								<h3>Opening Hours</h3>
+								<p>Monday 10am - 7pm</p>
+								<p>Tuesday 10am - 7pm</p>
+								<p>Wednesday 10am - 7pm</p>
+								<p>Thursday 10am - 7pm</p>
+								<p>Friday 10am - 7pm</p>
+								<p>Saturday 9am - 6pm</p>
+								<p>Sunday - Closed</p>
+							</div>
+						</div>
+					</div>
+					<div class="copyright pt-6 pb-6">
+						<div class="copyright-flex">
+							<div class="copyright-flex-item">
+								<p>Copyright &copy; <span id="date"></span> Tila Studio</p>
+							</div>
+							<div class="copyright-flex-item">
+								<p>
+									<a href="https://www.joesayegh.co.uk/">
+										Made with
+										<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.012 892">
+											<path d="M736.012,0q-67,0-125.5,30a289.314,289.314,0,0,0-98.5,82,289.324,289.324,0,0,0-98.5-82q-58.5-30-125.5-30-119,0-204,89.5T.012,304q1,69,29.5,129.5t77.5,102.5q3,3,9,8,10,9,170,154.5t205,185.5a31.563,31.563,0,0,0,42,0q34-30,185-167.5t197-178.5q51-42,80-103.5t29-131.5q0-125-84.5-214T736.012,0Z" />
+										</svg>
+										by Joe
+									</a>
+								</p>
+							</div>
+							<div class="copyright-flex-item">
+								<ul>
+									<li><a href="privacy.html">Privacy Policy</a></li>
+									<li><a href="#contact">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- SWIPER -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
