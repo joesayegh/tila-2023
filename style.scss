@@ -315,28 +315,6 @@ h6 {
 	--bold: 600;
 
 	// UTOPIA FONT SIZES
-	// --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.8rem);
-	// --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1rem);
-	// --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-	// --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
-	// --step-2: clamp(1.62rem, calc(1.5rem + 0.58vw), 1.95rem);
-	// --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
-	// --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
-	// --step-5: clamp(2.8rem, calc(2.45rem + 1.77vw), 3.82rem);
-
-	--step--2: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
-	--step--1: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
-	--step-0: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
-	--step-1: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
-	--step-2: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
-	--step-3: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
-	--step-4: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
-	--step-5: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
-
-	// HOVERS
-	--hover-fast: all 0.25s ease-in-out 0s;
-	--hover-medium: all 0.5s ease-in-out 0s;
-	--hover-slow: all 0.75s ease-in-out 0s;
 
 	// OVERRIDE
 	--swiper-theme-color: var(--white);
@@ -405,125 +383,25 @@ h6 {
 	margin-bottom: 0.5rem;
 }
 
-// h1 {
-// 	font-size: 68px;
-// 	font-size: 4.25rem;
-// 	line-height: 160%;
-// }
-
-// h2 {
-// 	font-size: 36px;
-// 	font-size: 2.25rem;
-// 	line-height: 160%;
-
-// 	@media screen and (min-width: 320px) {
-// 		font-size: 46px;
-// 		font-size: 2.875rem;
-// 	}
-
-// 	@media screen and (min-width: 414px) {
-// 		font-size: 60px;
-// 		font-size: 3.75rem;
-// 	}
-// }
-
-// h3 {
-// 	font-size: 30px;
-// 	font-size: 1.875rem;
-// 	line-height: 160%;
-
-// 	@media screen and (min-width: 320px) {
-// 		font-size: 36px;
-// 		font-size: 2.25rem;
-// 	}
-
-// 	@media screen and (min-width: 414px) {
-// 		font-size: 44px;
-// 		font-size: 2.75rem;
-// 	}
-// }
-
-// h4 {
-// 	font-size: 36px;
-// 	font-size: 2.25rem;
-// }
-
-// h5 {
-// 	font-size: 14px;
-// 	font-size: 0.875rem;
-// 	line-height: 160%;
-
-// 	@media screen and (min-width: 414px) {
-// 		font-size: 18px;
-// 		font-size: 1.125rem;
-// 	}
-// }
-
-// h1,
-// .h1 {
-// 	font-size: 50px;
-// 	font-size: 3.125rem;
-// 	line-height: 110%;
-
-// 	@media screen and (min-width: 768px) {
-// 		font-size: 70px;
-// 		font-size: 4.375rem;
-// 	}
-
-// 	@media screen and (min-width: 960px) {
-// 		font-size: 90px;
-// 		font-size: 5.625rem;
-// 	}
-// }
-
-h2,
-.h2 {
-	font-size: var(--step-4);
-	// 	font-size: 40px;
-	// 	font-size: 2.5rem;
-	// 	line-height: 110%;
-
-	// 	@media screen and (min-width: 768px) {
-	// 		font-size: 52px;
-	// 		font-size: 3.25rem;
-	// 	}
-
-	// 	@media screen and (min-width: 960px) {
-	// 		font-size: 70px;
-	// 		font-size: 4.375rem;
-	// 	}
+h1 {
+	font-size: clamp(3rem, calc(1.32rem + 6.73vw), 5.63rem);
+	line-height: 160%;
 }
 
-h3,
-.h3 {
-	font-size: var(--step-3);
-	// font: calc(2.25rem + 8 * (100vw - 20rem) / 1044) / 1.5 var(--font-heading);
-	// font-size: 40px;
-	// font-size: 2.5rem;
-	// line-height: 125%;
-
-	// @media screen and (min-width: 768px) {
-	// 	font-size: 50px;
-	// 	font-size: 3.125rem;
-	// }
+h2 {
+	font-size: clamp(3rem, calc(2.52rem + 1.92vw), 3.75rem);
+	line-height: 160%;
 }
 
-// h4,
-// .h4 {
-// 	font-size: 20px;
-// 	font-size: 1.25rem;
-// 	line-height: 128%;
+h3 {
+	font-size: clamp(2.25rem, calc(1.93rem + 1.28vw), 2.75rem);
+	line-height: 160%;
+}
 
-// 	@media screen and (min-width: 768px) {
-// 		font-size: 26px;
-// 		font-size: 1.625rem;
-// 	}
-
-// 	@media screen and (min-width: 1024px) {
-// 		font-size: 36px;
-// 		font-size: 2.25rem;
-// 	}
-// }
+h4 {
+	font-size: (1.25rem, calc(0.61rem + 2.56vw), 2.25rem);
+	line-height: 128%;
+}
 
 p {
 	margin-bottom: 28px;
@@ -541,7 +419,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-family: var(--font-body), sans-serif;
 	font-weight: 300;
-	font-size: var(--step-0);
+	font-size: clamp(1.13rem, calc(0.96rem + 0.64vw), 1.38rem);
 }
 
 // APPLY WHEN THE BODY SHOULDN'T SCROLL
@@ -570,8 +448,6 @@ button,
 	text-align: center;
 	text-decoration: none;
 	white-space: nowrap;
-	font-size: 16px;
-	font-size: 1rem;
 	padding: 0.8rem 1.5rem 0.75rem;
 	cursor: pointer;
 	color: inherit;
@@ -833,7 +709,6 @@ button,
 		background-color: rgba(0, 0, 0, 0.95);
 
 		.primary,
-		.secondary,
 		.social {
 			// margin: 0 0 3rem 0;
 			margin: 0;
@@ -863,25 +738,6 @@ button,
 				font-family: var(--font-heading);
 				font-size: 30px;
 				font-size: 1.875rem;
-				line-height: 160%;
-				text-decoration: none;
-			}
-		}
-
-		.secondary {
-			display: flex;
-			flex-wrap: wrap;
-
-			li {
-				flex-basis: 50%;
-				margin: 0 0 0.5rem;
-			}
-
-			a {
-				font-family: var(--font-heading);
-				font-weight: 100;
-				font-size: 20px;
-				font-size: 1.25rem;
 				line-height: 160%;
 				text-decoration: none;
 			}
@@ -1194,6 +1050,182 @@ button,
 	}
 }
 
+/////////////////////////
+// SERVICE IMAGES
+////////////////////////
+.service-images {
+	&-flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		&-item {
+			flex-basis: calc(100% / 3);
+		}
+	}
+}
+
+.grid {
+	figure {
+		position: relative;
+		float: left;
+		overflow: hidden;
+		background: #3085a3;
+		text-align: center;
+		cursor: pointer;
+
+		h3,
+		p {
+			margin: 0;
+		}
+
+		p {
+			// UTOPIA
+			font-size: clamp(0.75rem, calc(0.59rem + 0.64vw), 1rem);
+			letter-spacing: 1px;
+		}
+
+		h3 {
+			// UTOPIA
+			font-size: clamp(0.88rem, calc(-0.17rem + 4.17vw), 2.5rem);
+			word-spacing: -0.15em;
+			font-weight: 300;
+		}
+
+		img {
+			position: relative;
+			display: block;
+			height: 100%;
+			width: 100%;
+			opacity: 0.8;
+		}
+
+		figcaption {
+			padding: 2em;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 1.25em;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+			&:before,
+			&:after {
+				pointer-events: none;
+			}
+		}
+
+		figcaption,
+		figcaption > a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		// Anchor will cover the whole item by default
+		// For some effects it will show as a button
+		figcaption > a {
+			z-index: 1000;
+			text-indent: 200%;
+			white-space: nowrap;
+			font-size: 0;
+			opacity: 0;
+		}
+	}
+}
+
+// Individual effects
+
+// Sadie
+
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(72, 76, 97, 0) 0%, rgba(72, 76, 97, 0.8) 75%);
+	content: '';
+	opacity: 0;
+	transform: translate3d(0, 50%, 0);
+}
+
+figure.effect-sadie h3 {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	color: var(--white);
+	text-shadow: 2px 2px 1px #000;
+	transition: transform 0.35s, color 0.35s;
+	transform: translate3d(0, -50%, 0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	transform: translate3d(0, 10px, 0);
+}
+
+figure.effect-sadie:hover h3 {
+	transform: translate3d(0, -50%, 0) translate3d(0, -40px, 0);
+}
+
+figure.effect-sadie:hover figcaption::before,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	transform: translate3d(0, 0, 0);
+}
+
+////////////////////////////
+// SCISSORS
+////////////////////////////
+.scissors {
+	position: relative;
+	margin-bottom: 4rem;
+
+	&-animation {
+		animation: MoveUpDown 1.6s ease-in-out infinite;
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translateX(-50%);
+
+		img {
+			width: 65px;
+		}
+	}
+}
+
+@keyframes MoveUpDown {
+	0% {
+		bottom: 0;
+	}
+
+	50% {
+		bottom: 40px;
+	}
+
+	to {
+		bottom: 0;
+	}
+}
+
+///////////////////////////////////////
+// SOCIAL MEDIA
+///////////////////////////////////////
 .social-media {
 	&-bg {
 		background-image: url(img/bg-contact-2022-09.jpg);
