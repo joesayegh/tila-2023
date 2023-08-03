@@ -11,6 +11,7 @@ if (menuBtn) {
 	menuBtn.addEventListener('click', navToggle);
 
 	function navToggle() {
+		// TOGGLE ARIA EXPANDED
 		const expanded = menuBtn.getAttribute('aria-expanded');
 		if (expanded === 'false') {
 			menuBtn.setAttribute('aria-expanded', 'true');
@@ -18,13 +19,37 @@ if (menuBtn) {
 			menuBtn.setAttribute('aria-expanded', 'false');
 		}
 
+		// SHOW THE MENU
 		menu.classList.toggle('show');
 
+		// CHANGE THE HAMBURGER TO A CROSS
 		burgerLines.forEach(lineAnimation);
 
 		function lineAnimation(line) {
 			line.classList.toggle('animate');
 		}
+
+		// HIDE THE MENU WHEN LINK HAS BEEN CLICKED
+		const menuLinks = document.querySelectorAll('.mobile-main-menu .primary li a');
+
+		menuLinks.forEach((el) => {
+			el.addEventListener('click', function () {
+				// console.log('clicked');
+
+				// HIDE THE MENU
+				menu.classList.remove('show');
+
+				// CHANGE THE CROSS BACK TO A HAMBURGER
+				burgerLines.forEach(lineAnimation);
+
+				function lineAnimation(line) {
+					line.classList.remove('animate');
+				}
+
+				// SET ARIA EXPANDED TO FALSE AGAIN
+				menuBtn.setAttribute('aria-expanded', 'false');
+			});
+		});
 	}
 } else {
 	// console.log('No Mobile Menu on this page');
@@ -167,24 +192,9 @@ if (teamModal) {
 }
 
 //////////////////////////////////////
-// ACCORDION
-//////////////////////////////////////
-// var acc = document.getElementsByClassName('accordion');
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-// 	acc[i].onclick = function () {
-// 		this.classList.toggle('active');
-// 		var panel = this.nextElementSibling;
-// 		if (panel.style.maxHeight) {
-// 			panel.style.maxHeight = null;
-// 		} else {
-// 			panel.style.maxHeight = panel.scrollHeight + 'px';
-// 		}
-// 	};
-// }
-
 // YEAR IN THE FOOTER
+//////////////////////////////////////
+
 const date = document.querySelector('#date');
 const currentYear = new Date().getFullYear();
 date.textContent = currentYear;
