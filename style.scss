@@ -308,14 +308,6 @@ h6 {
 	--font-heading: 'Playfair Display', serif;
 	--font-body: 'Lato', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 
-	// FONT WEIGHTS
-	--light: 300;
-	--normal: 400;
-	--semibold: 500;
-	--bold: 600;
-
-	// UTOPIA FONT SIZES
-
 	// OVERRIDE
 	--swiper-theme-color: var(--white);
 }
@@ -379,28 +371,24 @@ h6 {
 	font-weight: normal;
 	clear: both;
 	letter-spacing: 1px;
-	margin-top: 0;
-	margin-bottom: 0.5rem;
+	line-height: 120%;
+	margin-bottom: 1.5rem;
 }
 
 h1 {
 	font-size: clamp(3rem, calc(1.32rem + 6.73vw), 5.63rem);
-	line-height: 160%;
 }
 
 h2 {
 	font-size: clamp(3rem, calc(2.52rem + 1.92vw), 3.75rem);
-	line-height: 160%;
 }
 
 h3 {
 	font-size: clamp(2.25rem, calc(1.93rem + 1.28vw), 2.75rem);
-	line-height: 160%;
 }
 
 h4 {
 	font-size: (1.25rem, calc(0.61rem + 2.56vw), 2.25rem);
-	line-height: 128%;
 }
 
 p {
@@ -836,7 +824,6 @@ button,
 
 .book-block {
 	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -844,6 +831,7 @@ button,
 
 	@media screen and (min-width: 768px) {
 		flex-direction: row;
+		gap: 1.5rem;
 	}
 
 	&-text {
