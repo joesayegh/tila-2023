@@ -388,7 +388,7 @@ h3 {
 }
 
 h4 {
-	font-size: (1.25rem, calc(0.61rem + 2.56vw), 2.25rem);
+	font-size: clamp(1.25rem, calc(0.61rem + 2.56vw), 2.25rem);
 }
 
 p {
@@ -1208,6 +1208,96 @@ figure.effect-sadie:hover p {
 
 	to {
 		bottom: 0;
+	}
+}
+
+/////////////////////
+// SERVICES LIST
+/////////////////////
+
+.service {
+	&-condition {
+		//cancels out defaults for p tags
+		margin-top: 0.5rem;
+		font-size: 0.75rem;
+		font-weight: 400;
+	}
+
+	&-title {
+		list-style: none;
+		font-family: var(--font-heading);
+		font-size: clamp(0.75rem, calc(0.51rem + 1.21vw), 0.94rem);
+		line-height: 180%;
+
+		li:nth-child(1) {
+			font-size: clamp(1rem, calc(0.52rem + 2.42vw), 1.38rem);
+			padding-bottom: 0.5rem;
+		}
+	}
+
+	&-list {
+		clear: both;
+		list-style: none;
+		font-size: clamp(0.63rem, calc(0.14rem + 2.42vw), 1rem);
+		line-height: 200%;
+
+		li:nth-child(2) {
+			background: #f9f9f9;
+		}
+		li:nth-child(3) {
+			background: #f2f2f2;
+		}
+		li:nth-child(4) {
+			background: #e6e6e6;
+		}
+		li:nth-child(5) {
+			background: #d9d9d9;
+		}
+	}
+
+	// FLEX LAYOUT
+	&-title,
+	&-list {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		padding: 0;
+		margin: 0;
+
+		// FOUR COLUMNS
+		.first-4 {
+			flex: 56.25%;
+		}
+
+		.second-4,
+		.third-4,
+		.fourth-4 {
+			flex: 14.58333%;
+		}
+
+		// FIVE COLUMNS
+		.first-5 {
+			flex: 50%;
+		}
+
+		.second-5,
+		.third-5,
+		.fourth-5,
+		.fifth-5 {
+			text-align: center;
+			flex: 12.5%;
+		}
+	}
+}
+
+/////////////////////
+// POLICIES, MAKE-UP and OFFERS
+/////////////////////
+.policies,
+.make-up,
+.offers {
+	.small {
+		font-size: clamp(0.75rem, calc(0.51rem + 1.21vw), 0.94rem);
 	}
 }
 
