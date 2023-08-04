@@ -619,7 +619,7 @@ button,
 	background: none;
 	border: none;
 	border-radius: 0;
-	padding: 18px 36px 18px 2px;
+	padding: 25px 36px 25px 2px;
 
 	&:hover,
 	&:focus {
@@ -639,17 +639,17 @@ button,
 	}
 
 	&-top {
-		top: 6px;
+		top: 20px;
 
 		// APPLIED ON CLICK
 		&.animate {
-			top: 19px;
+			top: 33px;
 			rotate: 45deg;
 		}
 	}
 
 	&-middle {
-		top: 16px;
+		top: 30px;
 
 		// APPLIED ON CLICK
 		&.animate {
