@@ -1226,7 +1226,7 @@ figure.effect-sadie:hover p {
 	&-title {
 		list-style: none;
 		font-family: var(--font-heading);
-		font-size: clamp(0.75rem, calc(0.51rem + 1.21vw), 0.94rem);
+		font-size: clamp(0.7rem, calc(0.4rem + 1.1vw), 0.94rem);
 		line-height: 180%;
 
 		li:nth-child(1) {
