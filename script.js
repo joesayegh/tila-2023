@@ -192,6 +192,28 @@ if (teamModal) {
 }
 
 //////////////////////////////////////
+// MAKE THE CURRENT DAY BOLD
+//////////////////////////////////////
+
+// CREATE AN ARRAY OF WEEKDAYS
+var days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+// CREATE A NEW DATE OBJECT - THIS WILL BE TODAY'S DATE AND TIME
+var todaysDate = new Date();
+
+// GET THE NUMBER OF THE DAY OF THE WEEK. 0 IF SUNDAY, 1 IF MONDAY, ETC.
+var dayNumber = todaysDate.getDay();
+
+// USING THE "DAYNUMBER" VARIABLE, GET THE DAY STRING BY ITS INDEX FROM THE "DAYS" ARRAY
+var dayString = days[dayNumber];
+
+// TARGET THE ELEMENT ON THE PAGE THAT HAS THE ID THAT MATCHES THE "DAYSTRING"
+var dayElement = document.getElementById(dayString);
+
+// ADD THE CLASS "BOLD" TO "DAYELEMENT"
+dayElement.classList.add('bold');
+
+//////////////////////////////////////
 // YEAR IN THE FOOTER
 //////////////////////////////////////
 
