@@ -892,11 +892,9 @@ button,
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding-bottom: 3rem;
 
 		// .team__content-item
 		&-item {
-			padding-bottom: 4rem;
 			width: 50%;
 
 			@media screen and (min-width: 768px) {
