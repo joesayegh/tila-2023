@@ -107,6 +107,11 @@ h6 {
 	margin: 0 auto;
 }
 
+.container-960 {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
 ///////////////////////
 // MARGIN
 ///////////////////////
@@ -365,7 +370,22 @@ h6 {
 /////////////////////////////////
 // MAIN
 /////////////////////////////////
-/// h1,
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	color: #404040;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: var(--font-body), sans-serif;
+	font-weight: 300;
+	font-size: clamp(1.13rem, calc(0.96rem + 0.64vw), 1.38rem);
+}
+
+h1,
 h2,
 h3,
 h4,
@@ -400,24 +420,8 @@ p {
 	margin-bottom: 1.75rem;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	overflow-x: hidden;
-	color: #404040;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	font-family: var(--font-body), sans-serif;
-	font-weight: 300;
-	font-size: clamp(1.13rem, calc(0.96rem + 0.64vw), 1.38rem);
-}
-
-// APPLY WHEN THE BODY SHOULDN'T SCROLL
-.lock {
-	overflow: hidden;
-	height: 100%;
+ul {
+	padding: 0 0 1.5rem 1.5rem;
 }
 
 a {
@@ -429,6 +433,12 @@ a {
 	&:focus {
 		text-decoration: none;
 	}
+}
+
+// APPLY WHEN THE BODY SHOULDN'T SCROLL
+.lock {
+	overflow: hidden;
+	height: 100%;
 }
 
 /////////////////////////////////
