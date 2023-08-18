@@ -92,19 +92,48 @@
 		</header>
 
 		<section id="hero">
-			<div class="hero-slider">
-				<div class="hero-slider__swiper swiper">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide"><img src="img/tila-salon-interior-2022.jpg" alt="Salon Interior 2022" /></div>
-						<div class="swiper-slide"><img src="img/K18_MaskFamily-720.jpg" alt="K18 Mask Treatment Products" /></div>
-						<div class="swiper-slide"><img src="img/new-clients-offer_v2-min.jpg" alt="" /></div>
-						<div class="swiper-slide"><img src="img/jan_promo_80-min.jpg" alt="" /></div>
+			<div class="hero">
+				<div class="hero-slider bg-black">
+					<div class="hero-slider__swiper swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<picture>
+									<source media="(max-width: 768px)" srcset="img/tila-salon-interior-2022-768x432.jpg" />
+									<source media="(max-width: 1280px)" srcset="img/tila-salon-interior-2022-1280x720.jpg" />
+									<source media="(min-width: 1281px)" srcset="img/tila-salon-interior-2022-1920x1080.jpg" />
+									<img src="img/tila-salon-interior-2022-1920x1080.jpg" alt="Salon Interior 2022" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source media="(max-width: 768px)" srcset="img/K18-MaskFamily-768x432.jpg" />
+									<source media="(min-width: 769px)" srcset="img/K18-MaskFamily-1280x720.jpg" />
+									<img src="img/K18-MaskFamily-1280x720.jpg" alt="K18 Mask Treatment Products" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source media="(max-width: 768px)" srcset="img/new-clients-offer-768x432.jpg" />
+									<source media="(max-width: 1280px)" srcset="img/new-clients-offer-1280x720.jpg" />
+									<source media="(min-width: 1281px)" srcset="img/new-clients-offer-1920x1080.jpg" />
+									<img src="img/new-clients-offer-1920x1080.jpg" alt="New Client Offer" />
+								</picture>
+							</div>
+							<div class="swiper-slide">
+								<picture>
+									<source media="(max-width: 768px)" srcset="img/jan-promo-768x432.jpg" />
+									<source media="(max-width: 1280px)" srcset="img/jan-promo-1280x720.jpg" />
+									<source media="(min-width: 1281px)" srcset="img/jan-promo-1920x1080.jpg" />
+									<img src="img/jan-promo-1920x1080.jpg" alt="January Promotion" />
+								</picture>
+							</div>
+						</div>
+
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<div class="swiper-pagination"></div>
 					</div>
-
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-
-					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>

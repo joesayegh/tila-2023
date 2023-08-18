@@ -575,6 +575,7 @@ button,
 	img {
 		width: 100%;
 		height: auto;
+		aspect-ratio: 16/9;
 	}
 }
 
@@ -866,10 +867,13 @@ button,
 ////////////////////////////////////////
 // HERO SLIDER
 ////////////////////////////////////////
+.hero {
+	background-color: var(--cod-grey);
 
-.hero-slider {
-	max-width: 1920px;
-	margin: 0 auto;
+	&-slider {
+		max-width: 1920px;
+		margin: 0 auto;
+	}
 }
 
 ///////////////////////////////////
