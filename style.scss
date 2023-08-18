@@ -948,6 +948,12 @@ button,
 				width: 25%;
 			}
 
+			.image {
+				img {
+					aspect-ratio: 5/7;
+				}
+			}
+
 			.text {
 				text-align: center;
 
