@@ -1,1006 +1,1065 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Tila Studio - Home</title>
 
-		<!-- GOOGLE FONTS -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Playfair+Display&display=swap" rel="stylesheet" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Tila Studio - Home</title>
 
-		<!-- SWIPER -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Playfair+Display&display=swap"
+		rel="stylesheet" />
 
-		<!-- STYLESHEET -->
-		<link rel="stylesheet" href="style.css" />
+	<!-- SWIPER -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-		<!-- FAVICON -->
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
-		<link rel="manifest" href="img/favicon/manifest.json" />
-		<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#101728" />
-		<meta name="msapplication-TileColor" content="#defe55" />
-	</head>
-	<body id="home">
-		<header id="header" class="header">
-			<div class="container padding">
-				<div class="header__flex">
-					<div class="header__logo">
-						<a href="/">
-							<img src="img/logo.svg" alt="Tila Studio Logo" width="225" height="51" />
-						</a>
-					</div>
-					<div class="header__nav desktop-only">
-						<nav class="primary" aria-label="primary">
-							<ul>
-								<li class="buyGiftcards"><a href="javascript:void(0)" onclick="saloniq.loader.openGiftCards2()">Giftcard</a></li>
+	<!-- STYLESHEET -->
+	<link rel="stylesheet" href="style.css" />
+
+	<!-- FAVICON -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+	<link rel="manifest" href="img/favicon/manifest.json" />
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#101728" />
+	<meta name="msapplication-TileColor" content="#defe55" />
+</head>
+
+<body id="home">
+	<header id="header" class="header">
+		<div class="container padding">
+			<div class="header__flex">
+				<div class="header__logo">
+					<a href="/">
+						<img src="img/logo.svg" alt="Tila Studio Logo" width="225" height="51" />
+					</a>
+				</div>
+				<div class="header__nav desktop-only">
+					<nav class="primary" aria-label="primary">
+						<ul>
+							<li class="buyGiftcards"><a href="javascript:void(0)"
+									onclick="saloniq.loader.openGiftCards2()">Giftcard</a></li>
+							<li><a href="#services">Services</a></li>
+							<li><a href="#team">Team</a></li>
+							<li><a href="#policies">T&amp;C</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<!-- MOBILE MENU -->
+				<div class="mobile-only">
+					<button id="menu-btn" class="hamburger" type="button" aria-controls="mobile-navigation"
+						aria-expanded="false">
+						<span class="visually-hidden">Menu</span>
+						<span class="hamburger-top"></span>
+						<span class="hamburger-middle"></span>
+						<span class="hamburger-bottom"></span>
+					</button>
+
+					<nav id="mobile-menu" class="mobile-main-menu">
+						<div class="mobile-main-menu-flex">
+							<!-- PRIMARY -->
+							<ul class="primary">
+								<li class="buyGiftcards"><a href="javascript:void(0)"
+										onclick="saloniq.loader.openGiftCards2()">Giftcard</a></li>
 								<li><a href="#services">Services</a></li>
 								<li><a href="#team">Team</a></li>
 								<li><a href="#policies">T&amp;C</a></li>
 								<li><a href="#contact">Contact</a></li>
+								<!-- SOCIAL -->
+								<li>
+									<ul class="social">
+										<li>
+											<a href="https://www.instagram.com/tilahairstudio/" target="_blank"
+												aria-label="Instagram Link(Opens in a new tab)">
+												<img src="img/instagram.svg" alt="Instagram Icon" />
+											</a>
+										</li>
+										<li>
+											<a href="https://en-gb.facebook.com/TilaStudio/" target="_blank"
+												aria-label="Facebook Link(Opens in a new tab)">
+												<img src="img/facebook.svg" alt="Facebook Icon" />
+											</a>
+										</li>
+										<li>
+											<a href="http://wa.link/lsn7fp" target="_blank"
+												aria-label="YouTube Link(Opens in a new tab)">
+												<img src="img/whatsapp.svg" alt="YouTube Icon" />
+											</a>
+										</li>
+									</ul>
+								</li>
 							</ul>
-						</nav>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="hero">
+		<div class="hero">
+			<div class="hero-slider bg-black">
+				<div class="hero-slider__swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 768px)" srcset="img/tila-salon-interior-2022-768x432.jpg" />
+								<source media="(max-width: 1280px)"
+									srcset="img/tila-salon-interior-2022-1280x720.jpg" />
+								<source media="(min-width: 1281px)"
+									srcset="img/tila-salon-interior-2022-1920x1080.jpg" />
+								<img src="img/tila-salon-interior-2022-1920x1080.jpg" alt="Salon Interior 2022" />
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 768px)" srcset="img/K18-MaskFamily-768x432.jpg" />
+								<source media="(min-width: 769px)" srcset="img/K18-MaskFamily-1280x720.jpg" />
+								<img src="img/K18-MaskFamily-1280x720.jpg" alt="K18 Mask Treatment Products" />
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 768px)" srcset="img/new-clients-offer-768x432.jpg" />
+								<source media="(max-width: 1280px)" srcset="img/new-clients-offer-1280x720.jpg" />
+								<source media="(min-width: 1281px)" srcset="img/new-clients-offer-1920x1080.jpg" />
+								<img src="img/new-clients-offer-1920x1080.jpg" alt="New Client Offer" />
+							</picture>
+						</div>
+						<div class="swiper-slide">
+							<picture>
+								<source media="(max-width: 768px)" srcset="img/jan-promo-768x432.jpg" />
+								<source media="(max-width: 1280px)" srcset="img/jan-promo-1280x720.jpg" />
+								<source media="(min-width: 1281px)" srcset="img/jan-promo-1920x1080.jpg" />
+								<img src="img/jan-promo-1920x1080.jpg" alt="January Promotion" />
+							</picture>
+						</div>
 					</div>
 
-					<!-- MOBILE MENU -->
-					<div class="mobile-only">
-						<button id="menu-btn" class="hamburger" type="button" aria-controls="mobile-navigation" aria-expanded="false">
-							<span class="visually-hidden">Menu</span>
-							<span class="hamburger-top"></span>
-							<span class="hamburger-middle"></span>
-							<span class="hamburger-bottom"></span>
-						</button>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
 
-						<nav id="mobile-menu" class="mobile-main-menu">
-							<div class="mobile-main-menu-flex">
-								<!-- PRIMARY -->
-								<ul class="primary">
-									<li class="buyGiftcards"><a href="javascript:void(0)" onclick="saloniq.loader.openGiftCards2()">Giftcard</a></li>
-									<li><a href="#services">Services</a></li>
-									<li><a href="#team">Team</a></li>
-									<li><a href="#policies">T&amp;C</a></li>
-									<li><a href="#contact">Contact</a></li>
-									<!-- SOCIAL -->
-									<li>
-										<ul class="social">
-											<li>
-												<a href="https://www.instagram.com/tilahairstudio/" target="_blank" aria-label="Instagram Link(Opens in a new tab)">
-													<img src="img/instagram.svg" alt="Instagram Icon" />
-												</a>
-											</li>
-											<li>
-												<a href="https://en-gb.facebook.com/TilaStudio/" target="_blank" aria-label="Facebook Link(Opens in a new tab)">
-													<img src="img/facebook.svg" alt="Facebook Icon" />
-												</a>
-											</li>
-											<li>
-												<a href="http://wa.link/lsn7fp" target="_blank" aria-label="YouTube Link(Opens in a new tab)">
-													<img src="img/whatsapp.svg" alt="YouTube Icon" />
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</nav>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="book-online-salon-iq">
+		<div class="bg-dark-grey">
+			<div class="container padding">
+				<div class="book-block">
+					<div class="book-block-text">
+						<h3>Book online today</h3>
+					</div>
+
+					<div class="book-block-button">
+						<p>
+							<a href="javascript:void(0)" onclick="saloniq.loader.openIFrame()">
+								<button class="btn btn-clear">CLICK HERE</button>
+							</a>
+						</p>
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
+	</section>
 
-		<section id="hero">
-			<div class="hero">
-				<div class="hero-slider bg-black">
-					<div class="hero-slider__swiper swiper">
+	<section id="intro">
+		<div class="container padding pt-16 pb-12">
+			<div class="intro-block" data-wow-delay="0.1s"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn">
+				<p>TILA STUDIO is an exciting, independent hair and make-up salon that first opened in December 2014.
+					We’re located in West Hampstead, Fortune Green Road, London NW6.</p>
+				<p>We provide a warm and friendly atmosphere offering bespoke services using only the best products on
+					the market and first class customer service. We specialise in Cutting, Colouring, Balayage, Olaplex,
+					Keratin treatment, Make-up, Wedding Packages and Hair ups that are tailored to your individual
+					needs. We offer premium haircare products such as Goldwell, Kerasilk, KMS, Olaplex and Morrocan Oil.
+					We support hair care brands that we consider to be the best in the business.</p>
+				<p>
+					<a href="#services" class="btn btn-arrow-right no-padding" aria-label="Go to services">
+						<span>VIEW SERVICES</span>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.46 720">
+							<path
+								d="M49.92,0h2.62c12.85,.27,25.52,5.49,34.7,14.5,100.83,100.81,201.65,201.64,302.47,302.46,4.49,4.6,9.41,8.88,12.96,14.29,8.36,12.29,10.99,28.31,6.87,42.6-2.35,8.55-7.01,16.43-13.31,22.67-102.65,102.66-205.31,205.29-307.95,307.96-9.09,9.41-21.85,15-34.91,15.52h-3.42c-13.77-.39-27.26-6.51-36.48-16.75-10.61-11.44-15.45-27.92-12.73-43.28,1.77-10.66,7.03-20.68,14.78-28.21,90.59-90.59,181.18-181.16,271.75-271.76C198.2,270.9,109.1,181.83,20.02,92.74c-2.83-2.87-5.8-5.63-8.38-8.74C3.84,74.56-.35,62.23,.03,50,.34,37.31,5.57,24.8,14.44,15.71,23.61,6.08,36.64,.4,49.92,0Z" />
+						</svg>
+					</a>
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="follow-us-on-instagram">
+		<div class="bg-dark-grey">
+			<div class="container padding">
+				<div class="book-block">
+					<div class="book-block-text">
+						<h3>Follow us on Instagram</h3>
+					</div>
+
+					<div class="book-block-button">
+						<p>
+							<a href="https://www.instagram.com/tilahairstudio/" target="_blank"
+								aria-label="Instagram Link(Opens in a new tab)">
+								<button class="btn btn-clear">CLICK HERE</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="promise">
+		<div class="container padding text-center pt-16 pb-16">
+			<div class="" data-wow-delay="0.1s"
+				style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn">
+				<h2>OUR PROMISE</h2>
+				<p>We promise to treat you as a guest in our home</p>
+				<p>All our staff are friendly, Knowledgeable and highly skilled</p>
+				<p>We will only recommend products and services that meet your needs</p>
+				<p>We will work together to give you the best cut, colour and make up to suit your requirements</p>
+				<p>We promise to give you an in-depth consultation at every visit</p>
+				<p>We respect your time, and will attend to you promptly.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="make-an-appointment">
+		<div class="bg-dark-grey">
+			<div class="container padding">
+				<div class="book-block">
+					<div class="book-block-text">
+						<h3>Make an appointment</h3>
+					</div>
+
+					<div class="book-block-button">
+						<p>
+							<a href="tel:02079981470">
+								<button class="btn btn-clear">0207 9981 470</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="team">
+		<div class="container padding pt-8 pb-8">
+			<div class="team">
+				<h2>Meet the Team</h2>
+			</div>
+
+			<!-- TEAM -->
+			<div class="team__content">
+				<div class="team__content-item pb-16">
+					<div class="image"><img src="img/tila.jpg" alt="Tila" loading="lazy" /></div>
+					<div class="text">
+						<p class="name">Tila</p>
+						<p class="title">Owner</p>
+						<button class="btn btn btn-primary team__modal-link" onclick="openModal();currentSlide(1)">READ
+							MORE</button>
+					</div>
+				</div>
+
+				<div class="team__content-item pb-16">
+					<div class="image"><img src="img/adela.jpg" alt="Adela" loading="lazy" /></div>
+					<div class="text">
+						<p class="name">Adela</p>
+						<p class="title">Creative Director</p>
+						<button class="btn btn btn-primary team__modal-link" onclick="openModal();currentSlide(2)">READ
+							MORE</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- MODAL / LIGHTBOX -->
+			<div id="teamModal" class="modal">
+				<div class="modal-content">
+					<div class="mySlides">
+						<div id="tila">
+							<div class="text">
+								<h4 class="name">Tila</h4>
+								<p>Meet our master hair stylist and owner of Tila hair studio, Tila. Tila started her
+									passion in this exciting and trendy industry 15 years ago whilst working at Toni &
+									Guy where she originally trained. Being one of the most prestigious salons in the
+									world, Tila's talent grew rapidly making her the hair guru she is today.</p>
+
+								<p>With a desire to be successful, Tila opened her own salon in West Hampstead in 2014
+									and ever since has attracted a fantastic clientele both local and international. A
+									wonderful eye for detail ensures your colour is perfect every time you leave the
+									salon.</p>
+
+								<p>Tila specialises in colour, cut, up styles and Extensions. We ensure you will always
+									leave looking beautiful. And don't worry, whether your hair is fine, straight or
+									curly, her techniques are mastered for all!</p>
+							</div>
+
+							<div class="text-center pb-12">
+								<button class="btn btn btn-primary" onclick="closeModal()">CLOSE</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="mySlides">
+						<div id="adela">
+							<div class="text">
+								<h4 class="name">Adela</h4>
+								<p>Adela joined Tila Studio in 2016 and has attracted a vibrant and loyal clientele both
+									locally and nationally.</p>
+
+								<p>Another string to her bow was her recent completion of her master colour course,
+									bringing you the latest trends in colour.</p>
+
+								<p>Whether it's styling, blowdrys, cut or colour you're after, you are in really
+									talented hands. Adela is known to always exceed clients expectations with classic
+									skill and modern techniques. From balayage to highlights or crazy colours, her eye
+									for detail will leave you looking glam.</p>
+							</div>
+
+							<div class="text-center pb-12">
+								<button class="btn btn btn-primary" onclick="closeModal()">CLOSE</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- NEXT/PREVIOUS BUTTONS -->
+					<!-- <button class="prev" onclick="plusSlides(-1)">Back</button> -->
+					<!-- <button class="next" onclick="plusSlides(1)">Next</button> -->
+
+					<!-- CLOSE BUTTON -->
+					<button class="close cursor" onclick="closeModal()" aria-label="Close">&times;</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact-us-on-whatsapp">
+		<div class="bg-dark-grey">
+			<div class="container padding">
+				<div class="book-block">
+					<div class="book-block-text">
+						<h3>CONTACT US ON WHATSAPP</h3>
+					</div>
+
+					<div class="book-block-button">
+						<p>
+							<a href="http://wa.link/lsn7fp">
+								<button class="btn btn-clear">CLICK HERE</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="services">
+		<h2 class="text-center pt-16 pb-12">Services</h2>
+		<div class="container padding pb-16">
+			<div class="service-images-flex grid">
+				<div class="service-images-flex-item">
+					<figure class="effect-sadie">
+						<a href="#ladies">
+							<img src="img/services-ladies.jpg" alt="Ladies" loading="lazy" />
+							<figcaption>
+								<div>
+									<h3>Ladies</h3>
+									<p>Click to view more</p>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="service-images-flex-item">
+					<figure class="effect-sadie">
+						<a href="#colour">
+							<img src="img/services-colour.jpg" alt="Colour" loading="lazy" />
+							<figcaption>
+								<div>
+									<h3>Colour</h3>
+									<p>Click to view more</p>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="service-images-flex-item">
+					<figure class="effect-sadie">
+						<a href="#creative_colour">
+							<img src="img/services-creative.jpg" alt="Creative" loading="lazy" />
+							<figcaption>
+								<div>
+									<h3>Creative</h3>
+									<p>Click to view more</p>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="service-images-flex-item">
+					<figure class="effect-sadie">
+						<a href="#treatment">
+							<img src="img/services-treatment.jpg" alt="Treatment" loading="lazy" />
+							<figcaption>
+								<div>
+									<h3>Treatment</h3>
+									<p>Click to view more</p>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="service-images-flex-item">
+					<figure class="effect-sadie">
+						<a href="#make-up">
+							<img src="img/services-make-up.jpg" alt="Make-Up" loading="lazy" />
+							<figcaption>
+								<div>
+									<h3>Make-up</h3>
+									<p>Click to view more</p>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+
+				<div class="service-images-flex-item">
+					<figure class="effect-sadie">
+						<a href="#offers">
+							<img src="img/services-offers-gradient.jpg" alt="Offers" loading="lazy" />
+							<figcaption>
+								<div>
+									<h3>Offers</h3>
+									<p>Click to view more</p>
+								</div>
+							</figcaption>
+						</a>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="scissors">
+		<div class="scissors pt-8 pb-24">
+			<div class="scissors-animation">
+				<img src="img/scissors.svg" alt="Tila Studio Scissorts Icon" alt="Tila Studio Scissors Icon" width="65"
+					height="87" loading="lazy" />
+			</div>
+		</div>
+	</section>
+
+	<section id="ladies">
+		<div class="container padding">
+			<ul class="service-title">
+				<li class="first-5">Cutting / Finishing</li>
+				<li class="second-5">Stylist</li>
+				<li class="third-5">Senior</li>
+				<li class="fourth-5">Director</li>
+				<li class="fifth-5">Tila</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Cut &amp; Finish*</li>
+				<li class="second-5">£54</li>
+				<li class="third-5">£60</li>
+				<li class="fourth-5">£67</li>
+				<li class="fifth-5">£72</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Cut &amp; Finish with Curls*</li>
+				<li class="second-5">£59</li>
+				<li class="third-5">£65</li>
+				<li class="fourth-5">£72</li>
+				<li class="fifth-5">£77</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Wash &amp; Blowdry*</li>
+				<li class="second-5">£34</li>
+				<li class="third-5">£35</li>
+				<li class="fourth-5">£39</li>
+				<li class="fifth-5">£43</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Hair Up*</li>
+				<li class="second-5">£70</li>
+				<li class="third-5">£70</li>
+				<li class="fourth-5">£70</li>
+				<li class="fifth-5">£70</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Mens Cutting</li>
+				<li class="second-5">£32</li>
+				<li class="third-5">£37</li>
+				<li class="fourth-5">£42</li>
+				<li class="fifth-5">£45</li>
+			</ul>
+		</div>
+
+		<div class="container padding service-condition">
+			<p><em>* Very Long / Thick Hair £10 Supplement</em></p>
+		</div>
+	</section>
+	<section id="children">
+		<div class="container padding">
+			<ul class="service-title">
+				<li class="first-5">Children (Under 12)</li>
+				<li class="second-5">Stylist</li>
+				<li class="third-5">Senior</li>
+				<li class="fourth-5">Director</li>
+				<li class="fifth-5">Tila</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Under 12 : Girls</li>
+				<li class="second-5">£45</li>
+				<li class="third-5">£45</li>
+				<li class="fourth-5">£45</li>
+				<li class="fifth-5">£45</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Under 12 : Boys</li>
+				<li class="second-5">£35</li>
+				<li class="third-5">£35</li>
+				<li class="fourth-5">£35</li>
+				<li class="fifth-5">£35</li>
+			</ul>
+		</div>
+
+		<div class="container padding service-condition">
+			<p><em>(Excludes Saturday and Sunday)</em></p>
+		</div>
+	</section>
+	<section id="colour">
+		<div class="container padding">
+			<ul class="service-title">
+				<li class="first-5">Essential Colour</li>
+				<li class="second-5">Stylist</li>
+				<li class="third-5">Senior</li>
+				<li class="fourth-5">Director</li>
+				<li class="fifth-5">Tila</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Glossing</li>
+				<li class="second-5">£53</li>
+				<li class="third-5">£58</li>
+				<li class="fourth-5">£63</li>
+				<li class="fifth-5">£68</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Toner</li>
+				<li class="second-5">£33</li>
+				<li class="third-5">£33</li>
+				<li class="fourth-5">£33</li>
+				<li class="fifth-5">£33</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Tint Full Head</li>
+				<li class="second-5">£76</li>
+				<li class="third-5">£81</li>
+				<li class="fourth-5">£86</li>
+				<li class="fifth-5">£91</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Re-growth</li>
+				<li class="second-5">£53</li>
+				<li class="third-5">£58</li>
+				<li class="fourth-5">£63</li>
+				<li class="fifth-5">£66</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Re-growth (Over 6 Weeks)</li>
+				<li class="second-5">£63</li>
+				<li class="third-5">£68</li>
+				<li class="fourth-5">£73</li>
+				<li class="fifth-5">£76</li>
+			</ul>
+		</div>
+
+		<div class="container padding service-condition">
+			<p><em>Organic Ammonia Free Colour £10 Supplement</em></p>
+		</div>
+	</section>
+	<section id="enhancement">
+		<div class="container padding">
+			<ul class="service-title">
+				<li class="first-5">Enhancement</li>
+				<li class="second-5">Stylist</li>
+				<li class="third-5">Senior</li>
+				<li class="fourth-5">Director</li>
+				<li class="fifth-5">Tila</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">T-Section / Part Head</li>
+				<li class="second-5">£70</li>
+				<li class="third-5">£75</li>
+				<li class="fourth-5">£85</li>
+				<li class="fifth-5">£95</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Half-Head Highlights</li>
+				<li class="second-5">£86</li>
+				<li class="third-5">£91</li>
+				<li class="fourth-5">£96</li>
+				<li class="fifth-5">£106</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Full-Head Highlights</li>
+				<li class="second-5">£128</li>
+				<li class="third-5">£133</li>
+				<li class="fourth-5">£138</li>
+				<li class="fifth-5">£148</li>
+			</ul>
+		</div>
+
+		<div class="container padding service-condition">
+			<p><em>Long/Thick Hair £10-40 Supplement</em></p>
+		</div>
+	</section>
+
+	<section id="creative_colour">
+		<div class="container padding">
+			<ul class="service-title">
+				<li class="first-5">Creative Colour (Includes Toner)</li>
+				<li class="second-5">Stylist</li>
+				<li class="third-5">Senior</li>
+				<li class="fourth-5">Director</li>
+				<li class="fifth-5">Tila</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Full Balayage</li>
+				<li class="second-5">£165</li>
+				<li class="third-5">£175</li>
+				<li class="fourth-5">£185</li>
+				<li class="fifth-5">£195</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Re-touch Balayage</li>
+				<li class="second-5">£127</li>
+				<li class="third-5">£137</li>
+				<li class="fourth-5">£147</li>
+				<li class="fifth-5">£157</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Bleach &amp; Tone over 6 weeks</li>
+				<li class="second-5">£</li>
+				<li class="third-5">£POQ</li>
+				<li class="fourth-5">£</li>
+				<li class="fifth-5">£</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Bleach &amp; Tone under 6 weeks</li>
+				<li class="second-5">£95</li>
+				<li class="third-5">£105</li>
+				<li class="fourth-5">£120</li>
+				<li class="fifth-5">£125</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Colour Correction</li>
+				<li class="second-5">£</li>
+				<li class="third-5">£POQ</li>
+				<li class="fourth-5">£</li>
+				<li class="fifth-5">£</li>
+			</ul>
+		</div>
+
+		<div class="container padding service-condition">
+			<p>
+				<em>Long/Thick Hair - Up to £40 Supplement<br />POQ - Price on Quotation</em>
+			</p>
+		</div>
+	</section>
+
+	<section id="treatment">
+		<div class="container padding">
+			<ul class="service-title">
+				<li class="first-5">Treatment</li>
+				<li class="second-5">Stylist</li>
+				<li class="third-5">Senior</li>
+				<li class="fourth-5">Director</li>
+				<li class="fifth-5">Tila</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Instant Treatments</li>
+				<li class="second-5">£20</li>
+				<li class="third-5">£20</li>
+				<li class="fourth-5">£20</li>
+				<li class="fifth-5">£20</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Olaplex Treatment</li>
+				<li class="second-5">£35</li>
+				<li class="third-5">£35</li>
+				<li class="fourth-5">£35</li>
+				<li class="fifth-5">£35</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Olaplex in Colour</li>
+				<li class="second-5">£45</li>
+				<li class="third-5">£45</li>
+				<li class="fourth-5">£45</li>
+				<li class="fifth-5">£45</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">K18 Hair Treatment</li>
+				<li class="second-5">£45</li>
+				<li class="third-5">£45</li>
+				<li class="fourth-5">£45</li>
+				<li class="fifth-5">£45</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Bridal Hair</li>
+				<li class="second-5">£</li>
+				<li class="third-5">£POQ</li>
+				<li class="fourth-5">£</li>
+				<li class="fifth-5">£</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Hair Extensions</li>
+				<li class="second-5">£</li>
+				<li class="third-5">£POQ</li>
+				<li class="fourth-5">£</li>
+				<li class="fifth-5">£</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Keratin Treatment</li>
+				<li class="second-5">£</li>
+				<li class="third-5">£POQ</li>
+				<li class="fourth-5">£</li>
+				<li class="fifth-5">£</li>
+			</ul>
+
+			<ul class="service-list">
+				<li class="first-5">Botox Hair Filler Treatment</li>
+				<li class="second-5">£</li>
+				<li class="third-5">£POQ</li>
+				<li class="fourth-5">£</li>
+				<li class="fifth-5">£</li>
+			</ul>
+		</div>
+
+		<div class="container padding service-condition">
+			<p>
+				<em>POQ - Price on Quotation<br />
+					Long/Thick Hair is a £40 Supplement<br />
+					Keratin Treatment and Botox Hair Filler Treatment is priced on hair length and density and ranges
+					from £200 - £240
+				</em>
+			</p>
+			<p>
+				<em>COMPLIMENTARY HAIR CONSULTATIONS AVAILABLE FOR ALL HAIR SERVICES<br />
+					* Students receive a 10% discount on cut &amp; colour with a valid UNiDAYS ID (Excludes Saturday and
+					Sunday)</em>
+			</p>
+		</div>
+	</section>
+
+	<section id="policies">
+		<div class="policies">
+			<div class="container padding pt-12 pb-12">
+				<h4>Deposit Policy</h4>
+				<p class="small">We request a deposit of £25 from every guest booking a colour and cut service. This
+					deposit will be used as part payment towards your service. If you fail to show up for your
+					appointment, we reserve the right to retain your deposit in line with our cancellation policy.</p>
+				<h4>Cancellation Policy</h4>
+				<p class="small">We require 48 hours’ notice of cancellation for all our guests. If appointments are
+					cancelled with less than 48 hours’ notice, then unfortunately, your deposit will be non-refundable.
+					We completely understand that life’s little dramas can get in the way of scheduled appointments, and
+					we can assure you that we will be sympathetic in certain circumstances.</p>
+				<p class="small">Regrettably, we have had to put these measures in place due to increasing numbers of
+					no-shows, and late cancellations, which is costing the salon hundreds of pounds in lost revenue each
+					month.</p>
+				<p class="small">We would like to thank you for your understanding and co-operation.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="make-up">
+		<div class="make-up">
+			<div style="background-color: #fad1bd">
+				<div class="container padding pt-12 pb-12">
+					<div class="text-block-grid">
+						<div class="full-width text-center">
+							<h2>Hair and Make-up Services</h2>
+							<p>Every bride wants to look and feel her best on the big day, therefore, a trial is
+								reccomended to help create the look you want.</p>
+							<p>Bridal hair and make-up • £300</p>
+							<p>Trial hair and make-up • £100</p>
+							<p>Make-up only • £70 Special occasion, events, prom</p>
+							<p>Make-Up Lesson •£60 Eyelash strip • £8</p>
+							<p>We <strong>ONLY</strong> use luxury makeup brands</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="offers">
+		<div class="offers">
+			<div style="background-color: #e5e7e9">
+				<div class="container padding pt-12 pb-12">
+					<div class="text-block-grid">
+						<div class="full-width">
+							<h2 class="text-center">Offers</h2>
+							<p>We believe that amazing hairdressing should be affordable. Here’s how to get more out of
+								your budget this season.</p>
+
+							<h3>New Clients</h3>
+							<p>New clients are treated to £10 off their first hair dressing service at Tila Studio West
+								Hampstead (Tuesday-Friday). Please mention you are a new client when booking to take
+								advantage of the £10 discount. We look forward to welcoming you to our Salon.</p>
+							<p class="small">Not valid on blowdries and treatments. Subject to stylist availability.
+								This offer cannot be used in conjunction with any other offer. Quote “tila10” when
+								booking via phone. Offer not valid on weekends or for the month of December.</p>
+
+							<h3>Recommend a friend</h3>
+							<p>Why not share the love! Give a gift card to a family member or a friend. When they visit
+								our salon they will receive £10 off any cut and colour service, and, we will give
+								exactly the same to you on your next visit.</p>
+
+							<p class="small">
+								*T&amp;Cs apply<br />
+								Not valid on blowdries and treatments. Subject to stylist availability. This offer
+								cannot be used in conjunction with any other offer. Offer not valid on weekends or for
+								the month of December.
+							</p>
+
+							<h3>Special Offer</h3>
+							<p>Students receive 10% off* (Monday-Thursday, Cut &amp; Colour)</p>
+							<p class="small">* Valid UNiDAYS Card required</p>
+
+							<h3>Gift Certificates</h3>
+							<p>The gift to gorgeous hair and make-up. Treat your special loved one’s to Tila Studio Gift
+								Certificates.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="email-us">
+		<div class="bg-dark-grey">
+			<div class="container padding">
+				<div class="book-block">
+					<div class="book-block-text">
+						<h3>CHECK AVAILABILITY NOW</h3>
+					</div>
+
+					<div class="book-block-button">
+						<p>
+							<a href="mailto:info@tilahairstudio.com">
+								<button class="btn btn-clear">EMAIL US</button>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="social">
+		<div class="social-media-section-bg">
+			<div class="container pt-32 pb-32">
+				<div class="social-media-section text-white">
+					<div class="social-media-section-flex">
+						<div class="social-media-section-flex-item">
+							<h2 class="title">Let's be social</h2>
+						</div>
+
+						<div class="social-media-section-flex-item">
+							<ul class="social">
+								<li>
+									<a href="https://www.instagram.com/tilahairstudio/" target="_blank"
+										aria-label="Instagram Link(Opens in a new tab)">
+										<img src="img/instagram.svg" alt="Instagram Icon" loading="lazy" />
+									</a>
+								</li>
+								<li>
+									<a href="https://en-gb.facebook.com/TilaStudio/" target="_blank"
+										aria-label="Facebook Link(Opens in a new tab)">
+										<img src="img/facebook.svg" alt="Facebook Icon" loading="lazy" />
+									</a>
+								</li>
+								<li>
+									<a href="http://wa.link/lsn7fp" target="_blank"
+										aria-label="YouTube Link(Opens in a new tab)">
+										<img src="img/whatsapp.svg" alt="YouTube Icon" loading="lazy" />
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="testimonials">
+		<div class="bg-cod-grey text-white text-center">
+			<div class="testimonials">
+				<div class="testimonials-slider pt-16 pb-16">
+					<h2>Testimonials</h2>
+					<div class="testimonials-slider__swiper swiper pt-8 pb-24">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<picture>
-									<source media="(max-width: 768px)" srcset="img/tila-salon-interior-2022-768x432.jpg" />
-									<source media="(max-width: 1280px)" srcset="img/tila-salon-interior-2022-1280x720.jpg" />
-									<source media="(min-width: 1281px)" srcset="img/tila-salon-interior-2022-1920x1080.jpg" />
-									<img src="img/tila-salon-interior-2022-1920x1080.jpg" alt="Salon Interior 2022" />
-								</picture>
+								<figure>
+									<blockquote>
+										<p>Excellent quality, amazing prices</p>
+									</blockquote>
+									<figcaption><cite>Dafina Zhubi</cite></figcaption>
+								</figure>
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source media="(max-width: 768px)" srcset="img/K18-MaskFamily-768x432.jpg" />
-									<source media="(min-width: 769px)" srcset="img/K18-MaskFamily-1280x720.jpg" />
-									<img src="img/K18-MaskFamily-1280x720.jpg" alt="K18 Mask Treatment Products" />
-								</picture>
+								<figure>
+									<blockquote>
+										<p>Amazing service, amazing cut and colour</p>
+									</blockquote>
+									<figcaption><cite>Teresa Arcadipane</cite></figcaption>
+								</figure>
 							</div>
 							<div class="swiper-slide">
-								<picture>
-									<source media="(max-width: 768px)" srcset="img/new-clients-offer-768x432.jpg" />
-									<source media="(max-width: 1280px)" srcset="img/new-clients-offer-1280x720.jpg" />
-									<source media="(min-width: 1281px)" srcset="img/new-clients-offer-1920x1080.jpg" />
-									<img src="img/new-clients-offer-1920x1080.jpg" alt="New Client Offer" />
-								</picture>
-							</div>
-							<div class="swiper-slide">
-								<picture>
-									<source media="(max-width: 768px)" srcset="img/jan-promo-768x432.jpg" />
-									<source media="(max-width: 1280px)" srcset="img/jan-promo-1280x720.jpg" />
-									<source media="(min-width: 1281px)" srcset="img/jan-promo-1920x1080.jpg" />
-									<img src="img/jan-promo-1920x1080.jpg" alt="January Promotion" />
-								</picture>
+								<figure>
+									<blockquote>
+										<p>I had a great head massage and a superb haircut</p>
+									</blockquote>
+									<figcaption><cite>Joseph Sayegh</cite></figcaption>
+								</figure>
 							</div>
 						</div>
 
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<!-- PAGINATION -->
+						<div class="swiper-pagination testimonials-slider__swiper-pagination"></div>
 
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="book-online-salon-iq">
-			<div class="bg-dark-grey">
-				<div class="container padding">
-					<div class="book-block">
-						<div class="book-block-text">
-							<h3>Book online today</h3>
-						</div>
-
-						<div class="book-block-button">
-							<p>
-								<a href="javascript:void(0)" onclick="saloniq.loader.openIFrame()">
-									<button class="btn btn-clear">CLICK HERE</button>
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="intro">
-			<div class="container padding pt-16 pb-12">
-				<div class="intro-block" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn">
-					<p>TILA STUDIO is an exciting, independent hair and make-up salon that first opened in December 2014. We’re located in West Hampstead, Fortune Green Road, London NW6.</p>
-					<p>We provide a warm and friendly atmosphere offering bespoke services using only the best products on the market and first class customer service. We specialise in Cutting, Colouring, Balayage, Olaplex, Keratin treatment, Make-up, Wedding Packages and Hair ups that are tailored to your individual needs. We offer premium haircare products such as Goldwell, Kerasilk, KMS, Olaplex and Morrocan Oil. We support hair care brands that we consider to be the best in the business.</p>
-					<p>
-						<a href="#services" class="btn btn-arrow-right no-padding" aria-label="Go to services">
-							<span>VIEW SERVICES</span>
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411.46 720">
-								<path d="M49.92,0h2.62c12.85,.27,25.52,5.49,34.7,14.5,100.83,100.81,201.65,201.64,302.47,302.46,4.49,4.6,9.41,8.88,12.96,14.29,8.36,12.29,10.99,28.31,6.87,42.6-2.35,8.55-7.01,16.43-13.31,22.67-102.65,102.66-205.31,205.29-307.95,307.96-9.09,9.41-21.85,15-34.91,15.52h-3.42c-13.77-.39-27.26-6.51-36.48-16.75-10.61-11.44-15.45-27.92-12.73-43.28,1.77-10.66,7.03-20.68,14.78-28.21,90.59-90.59,181.18-181.16,271.75-271.76C198.2,270.9,109.1,181.83,20.02,92.74c-2.83-2.87-5.8-5.63-8.38-8.74C3.84,74.56-.35,62.23,.03,50,.34,37.31,5.57,24.8,14.44,15.71,23.61,6.08,36.64,.4,49.92,0Z" />
+						<!-- AUTOPLAY PROGRESS -->
+						<div class="autoplay-progress">
+							<svg viewBox="0 0 48 48">
+								<circle cx="24" cy="24" r="20"></circle>
 							</svg>
-						</a>
-					</p>
+							<span></span>
+						</div>
+					</div>
+
+					<div class="testimonials-read-more">
+						<a href="https://www.google.com/search?q=Tila+Studio+Hair+%26+Makeup&amp;ludocid=4574812023654138167#lrd=0x0:0x3f7cff4c10174137,1"
+							target="_blank">Click here to read more reviews</a>
+					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section id="follow-us-on-instagram">
-			<div class="bg-dark-grey">
-				<div class="container padding">
-					<div class="book-block">
-						<div class="book-block-text">
-							<h3>Follow us on Instagram</h3>
+	<footer id="contact">
+		<div class="bg-cod-grey text-dusty-grey">
+			<div class="container padding">
+				<div class="contact pt-8 pb-8">
+					<div class="contact-flex">
+						<div class="contact-flex-item">
+							<h3>Contact Us</h3>
+							<p>
+								<a href="https://goo.gl/maps/g4cMQfmEoEF2" target="_blank">
+									78 Fortune Green Road<br />
+									London NW6 1DS
+								</a>
+							</p>
+							<p><a href="tel:02079981470">0207 9981 470</a></p>
+							<p><a href="mailto:info@tilahairstudio.com">info@tilahairstudio.com</a></p>
+							<p><a href="http://wa.link/lsn7fp">Click here for WhatsApp</a></p>
 						</div>
 
-						<div class="book-block-button">
+						<div class="contact-flex-item">
+							<h3>Opening Hours</h3>
+							<p id="monday">Monday 10am - 7pm</p>
+							<p id="tuesday">Tuesday 10am - 7pm</p>
+							<p id="wednesday">Wednesday 10am - 7pm</p>
+							<p id="thursday">Thursday 10am - 7pm</p>
+							<p id="friday">Friday 10am - 7pm</p>
+							<p id="saturday">Saturday 9am - 6pm</p>
+							<p id="sunday">Sunday - Closed</p>
+						</div>
+					</div>
+				</div>
+				<div class="copyright pt-6 pb-6">
+					<div class="copyright-flex">
+						<div class="copyright-flex-item">
+							<p>Copyright &copy; <span id="date"></span> Tila Studio</p>
+						</div>
+						<div class="copyright-flex-item">
 							<p>
-								<a href="https://www.instagram.com/tilahairstudio/" target="_blank" aria-label="Instagram Link(Opens in a new tab)">
-									<button class="btn btn-clear">CLICK HERE</button>
+								<a href="https://www.joesayegh.co.uk/">
+									Made with
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.012 892">
+										<path
+											d="M736.012,0q-67,0-125.5,30a289.314,289.314,0,0,0-98.5,82,289.324,289.324,0,0,0-98.5-82q-58.5-30-125.5-30-119,0-204,89.5T.012,304q1,69,29.5,129.5t77.5,102.5q3,3,9,8,10,9,170,154.5t205,185.5a31.563,31.563,0,0,0,42,0q34-30,185-167.5t197-178.5q51-42,80-103.5t29-131.5q0-125-84.5-214T736.012,0Z" />
+									</svg>
+									by Joe
 								</a>
 							</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="promise">
-			<div class="container padding text-center pt-16 pb-16">
-				<div class="" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn">
-					<h2>OUR PROMISE</h2>
-					<p>We promise to treat you as a guest in our home</p>
-					<p>All our staff are friendly, Knowledgeable and highly skilled</p>
-					<p>We will only recommend products and services that meet your needs</p>
-					<p>We will work together to give you the best cut, colour and make up to suit your requirements</p>
-					<p>We promise to give you an in-depth consultation at every visit</p>
-					<p>We respect your time, and will attend to you promptly.</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="make-an-appointment">
-			<div class="bg-dark-grey">
-				<div class="container padding">
-					<div class="book-block">
-						<div class="book-block-text">
-							<h3>Make an appointment</h3>
-						</div>
-
-						<div class="book-block-button">
-							<p>
-								<a href="tel:02079981470">
-									<button class="btn btn-clear">0207 9981 470</button>
-								</a>
-							</p>
+						<div class="copyright-flex-item">
+							<ul>
+								<li><a href="privacy.html">Privacy Policy</a></li>
+								<li><a href="#header">Back to top</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</footer>
+
+	<!-- SALON IQ -->
+	<script type="text/javascript">
+		!(function (b, c) {
+			(b.saloniqid = '5b0212bb-991e-45e8-a63c-857a8a4e450a'), (b.saloniqsite = 'https://bookings.saloniq.co.uk');
+			// (b.saloniqid = 'f59f2d1e-1227-42a5-b70f-f1207d4d5b8d'), (b.saloniqsite = 'https://bookings.saloniq.co.uk');
+			var d,
+				g,
+				e = 'onlinebookingwidget-loader',
+				f = c.getElementsByTagName('script')[0];
+			c.getElementById(e) || ((d = c.createElement('script')), (d.id = e), (d.async = !0), (d.src = b.saloniqsite + '/scripts/' + e + '.js?d=' + Date.now()), (g = f ? f.parentNode : c.getElementsByTagName('head')[0]), g.insertBefore(d, f));
+		})(window, document);
+	</script>
+
+	<!-- SWIPER -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
+</body>
 
-		<section id="team">
-			<div class="container padding pt-8 pb-8">
-				<div class="team">
-					<h2>Meet the Team</h2>
-				</div>
-
-				<!-- TEAM -->
-				<div class="team__content">
-					<div class="team__content-item pb-16">
-						<div class="image"><img src="img/tila.jpg" alt="Tila" loading="lazy" /></div>
-						<div class="text">
-							<p class="name">Tila</p>
-							<p class="title">Owner</p>
-							<button class="btn btn btn-primary team__modal-link" onclick="openModal();currentSlide(1)">READ MORE</button>
-						</div>
-					</div>
-
-					<div class="team__content-item pb-16">
-						<div class="image"><img src="img/adela.jpg" alt="Adela" loading="lazy" /></div>
-						<div class="text">
-							<p class="name">Adela</p>
-							<p class="title">Creative Director</p>
-							<button class="btn btn btn-primary team__modal-link" onclick="openModal();currentSlide(2)">READ MORE</button>
-						</div>
-					</div>
-				</div>
-
-				<!-- MODAL / LIGHTBOX -->
-				<div id="teamModal" class="modal">
-					<div class="modal-content">
-						<div class="mySlides">
-							<div id="tila">
-								<div class="text">
-									<h4 class="name">Tila</h4>
-									<p>Meet our master hair stylist and owner of Tila hair studio, Tila. Tila started her passion in this exciting and trendy industry 15 years ago whilst working at Toni & Guy where she originally trained. Being one of the most prestigious salons in the world, Tila's talent grew rapidly making her the hair guru she is today.</p>
-
-									<p>With a desire to be successful, Tila opened her own salon in West Hampstead in 2014 and ever since has attracted a fantastic clientele both local and international. A wonderful eye for detail ensures your colour is perfect every time you leave the salon.</p>
-
-									<p>Tila specialises in colour, cut, up styles and Extensions. We ensure you will always leave looking beautiful. And don't worry, whether your hair is fine, straight or curly, her techniques are mastered for all!</p>
-								</div>
-
-								<div class="text-center pb-12">
-									<button class="btn btn btn-primary" onclick="closeModal()">CLOSE</button>
-								</div>
-							</div>
-						</div>
-
-						<div class="mySlides">
-							<div id="adela">
-								<div class="text">
-									<h4 class="name">Adela</h4>
-									<p>Adela joined Tila Studio in 2016 and has attracted a vibrant and loyal clientele both locally and nationally.</p>
-
-									<p>Another string to her bow was her recent completion of her master colour course, bringing you the latest trends in colour.</p>
-
-									<p>Whether it's styling, blowdrys, cut or colour you're after, you are in really talented hands. Adela is known to always exceed clients expectations with classic skill and modern techniques. From balayage to highlights or crazy colours, her eye for detail will leave you looking glam.</p>
-								</div>
-
-								<div class="text-center pb-12">
-									<button class="btn btn btn-primary" onclick="closeModal()">CLOSE</button>
-								</div>
-							</div>
-						</div>
-
-						<!-- NEXT/PREVIOUS BUTTONS -->
-						<!-- <button class="prev" onclick="plusSlides(-1)">Back</button> -->
-						<!-- <button class="next" onclick="plusSlides(1)">Next</button> -->
-
-						<!-- CLOSE BUTTON -->
-						<button class="close cursor" onclick="closeModal()" aria-label="Close">&times;</button>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="contact-us-on-whatsapp">
-			<div class="bg-dark-grey">
-				<div class="container padding">
-					<div class="book-block">
-						<div class="book-block-text">
-							<h3>CONTACT US ON WHATSAPP</h3>
-						</div>
-
-						<div class="book-block-button">
-							<p>
-								<a href="http://wa.link/lsn7fp">
-									<button class="btn btn-clear">CLICK HERE</button>
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="services">
-			<h2 class="text-center pt-16 pb-12">Services</h2>
-			<div class="container padding pb-16">
-				<div class="service-images-flex grid">
-					<div class="service-images-flex-item">
-						<figure class="effect-sadie">
-							<a href="#ladies">
-								<img src="img/services-ladies.jpg" alt="Ladies" loading="lazy" />
-								<figcaption>
-									<div>
-										<h3>Ladies</h3>
-										<p>Click to view more</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</div>
-
-					<div class="service-images-flex-item">
-						<figure class="effect-sadie">
-							<a href="#colour">
-								<img src="img/services-colour.jpg" alt="Colour" loading="lazy" />
-								<figcaption>
-									<div>
-										<h3>Colour</h3>
-										<p>Click to view more</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</div>
-
-					<div class="service-images-flex-item">
-						<figure class="effect-sadie">
-							<a href="#creative_colour">
-								<img src="img/services-creative.jpg" alt="Creative" loading="lazy" />
-								<figcaption>
-									<div>
-										<h3>Creative</h3>
-										<p>Click to view more</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</div>
-
-					<div class="service-images-flex-item">
-						<figure class="effect-sadie">
-							<a href="#treatment">
-								<img src="img/services-treatment.jpg" alt="Treatment" loading="lazy" />
-								<figcaption>
-									<div>
-										<h3>Treatment</h3>
-										<p>Click to view more</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</div>
-
-					<div class="service-images-flex-item">
-						<figure class="effect-sadie">
-							<a href="#make-up">
-								<img src="img/services-make-up.jpg" alt="Make-Up" loading="lazy" />
-								<figcaption>
-									<div>
-										<h3>Make-up</h3>
-										<p>Click to view more</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</div>
-
-					<div class="service-images-flex-item">
-						<figure class="effect-sadie">
-							<a href="#offers">
-								<img src="img/services-offers-gradient.jpg" alt="Offers" loading="lazy" />
-								<figcaption>
-									<div>
-										<h3>Offers</h3>
-										<p>Click to view more</p>
-									</div>
-								</figcaption>
-							</a>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="scissors">
-			<div class="scissors pt-8 pb-24">
-				<div class="scissors-animation">
-					<img src="img/scissors.svg" alt="Tila Studio Scissorts Icon" alt="Tila Studio Scissors Icon" width="65" height="87" loading="lazy" />
-				</div>
-			</div>
-		</section>
-
-		<section id="ladies">
-			<div class="container padding">
-				<ul class="service-title">
-					<li class="first-5">Cutting / Finishing</li>
-					<li class="second-5">Stylist</li>
-					<li class="third-5">Senior</li>
-					<li class="fourth-5">Director</li>
-					<li class="fifth-5">Tila</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Cut &amp; Finish*</li>
-					<li class="second-5">£54</li>
-					<li class="third-5">£60</li>
-					<li class="fourth-5">£67</li>
-					<li class="fifth-5">£72</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Cut &amp; Finish with Curls*</li>
-					<li class="second-5">£59</li>
-					<li class="third-5">£65</li>
-					<li class="fourth-5">£72</li>
-					<li class="fifth-5">£77</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Wash &amp; Blowdry*</li>
-					<li class="second-5">£34</li>
-					<li class="third-5">£35</li>
-					<li class="fourth-5">£39</li>
-					<li class="fifth-5">£43</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Hair Up*</li>
-					<li class="second-5">£70</li>
-					<li class="third-5">£70</li>
-					<li class="fourth-5">£70</li>
-					<li class="fifth-5">£70</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Mens Cutting</li>
-					<li class="second-5">£32</li>
-					<li class="third-5">£37</li>
-					<li class="fourth-5">£42</li>
-					<li class="fifth-5">£45</li>
-				</ul>
-			</div>
-
-			<div class="container padding service-condition">
-				<p><em>* Very Long / Thick Hair £10 Supplement</em></p>
-			</div>
-		</section>
-		<section id="children">
-			<div class="container padding">
-				<ul class="service-title">
-					<li class="first-5">Children (Under 12)</li>
-					<li class="second-5">Stylist</li>
-					<li class="third-5">Senior</li>
-					<li class="fourth-5">Director</li>
-					<li class="fifth-5">Tila</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Under 12 : Girls</li>
-					<li class="second-5">£40</li>
-					<li class="third-5">£40</li>
-					<li class="fourth-5">£40</li>
-					<li class="fifth-5">£40</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Under 12 : Boys</li>
-					<li class="second-5">£30</li>
-					<li class="third-5">£30</li>
-					<li class="fourth-5">£30</li>
-					<li class="fifth-5">£30</li>
-				</ul>
-			</div>
-
-			<div class="container padding service-condition">
-				<p><em>(Excludes Saturday and Sunday)</em></p>
-			</div>
-		</section>
-		<section id="colour">
-			<div class="container padding">
-				<ul class="service-title">
-					<li class="first-5">Essential Colour</li>
-					<li class="second-5">Stylist</li>
-					<li class="third-5">Senior</li>
-					<li class="fourth-5">Director</li>
-					<li class="fifth-5">Tila</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Glossing</li>
-					<li class="second-5">£53</li>
-					<li class="third-5">£58</li>
-					<li class="fourth-5">£63</li>
-					<li class="fifth-5">£68</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Toner</li>
-					<li class="second-5">£33</li>
-					<li class="third-5">£33</li>
-					<li class="fourth-5">£33</li>
-					<li class="fifth-5">£33</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Tint Full Head</li>
-					<li class="second-5">£76</li>
-					<li class="third-5">£81</li>
-					<li class="fourth-5">£86</li>
-					<li class="fifth-5">£91</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Re-growth</li>
-					<li class="second-5">£53</li>
-					<li class="third-5">£58</li>
-					<li class="fourth-5">£63</li>
-					<li class="fifth-5">£66</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Re-growth (Over 6 Weeks)</li>
-					<li class="second-5">£63</li>
-					<li class="third-5">£68</li>
-					<li class="fourth-5">£73</li>
-					<li class="fifth-5">£76</li>
-				</ul>
-			</div>
-
-			<div class="container padding service-condition">
-				<p><em>Organic Ammonia Free Colour £10 Supplement</em></p>
-			</div>
-		</section>
-		<section id="enhancement">
-			<div class="container padding">
-				<ul class="service-title">
-					<li class="first-5">Enhancement</li>
-					<li class="second-5">Stylist</li>
-					<li class="third-5">Senior</li>
-					<li class="fourth-5">Director</li>
-					<li class="fifth-5">Tila</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">T-Section / Part Head</li>
-					<li class="second-5">£70</li>
-					<li class="third-5">£75</li>
-					<li class="fourth-5">£85</li>
-					<li class="fifth-5">£95</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Half-Head Highlights</li>
-					<li class="second-5">£86</li>
-					<li class="third-5">£91</li>
-					<li class="fourth-5">£96</li>
-					<li class="fifth-5">£106</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Full-Head Highlights</li>
-					<li class="second-5">£128</li>
-					<li class="third-5">£133</li>
-					<li class="fourth-5">£138</li>
-					<li class="fifth-5">£148</li>
-				</ul>
-			</div>
-
-			<div class="container padding service-condition">
-				<p><em>Long/Thick Hair £10-40 Supplement</em></p>
-			</div>
-		</section>
-
-		<section id="creative_colour">
-			<div class="container padding">
-				<ul class="service-title">
-					<li class="first-5">Creative Colour (Includes Toner)</li>
-					<li class="second-5">Stylist</li>
-					<li class="third-5">Senior</li>
-					<li class="fourth-5">Director</li>
-					<li class="fifth-5">Tila</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Full Balayage</li>
-					<li class="second-5">£165</li>
-					<li class="third-5">£175</li>
-					<li class="fourth-5">£185</li>
-					<li class="fifth-5">£195</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Re-touch Balayage</li>
-					<li class="second-5">£127</li>
-					<li class="third-5">£137</li>
-					<li class="fourth-5">£147</li>
-					<li class="fifth-5">£157</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Bleach &amp; Tone over 6 weeks</li>
-					<li class="second-5">£</li>
-					<li class="third-5">£POQ</li>
-					<li class="fourth-5">£</li>
-					<li class="fifth-5">£</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Bleach &amp; Tone under 6 weeks</li>
-					<li class="second-5">£95</li>
-					<li class="third-5">£105</li>
-					<li class="fourth-5">£120</li>
-					<li class="fifth-5">£125</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Colour Correction</li>
-					<li class="second-5">£</li>
-					<li class="third-5">£POQ</li>
-					<li class="fourth-5">£</li>
-					<li class="fifth-5">£</li>
-				</ul>
-			</div>
-
-			<div class="container padding service-condition">
-				<p>
-					<em>Long/Thick Hair - Up to £40 Supplement<br />POQ - Price on Quotation</em>
-				</p>
-			</div>
-		</section>
-
-		<section id="treatment">
-			<div class="container padding">
-				<ul class="service-title">
-					<li class="first-5">Treatment</li>
-					<li class="second-5">Stylist</li>
-					<li class="third-5">Senior</li>
-					<li class="fourth-5">Director</li>
-					<li class="fifth-5">Tila</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Instant Treatments</li>
-					<li class="second-5">£20</li>
-					<li class="third-5">£20</li>
-					<li class="fourth-5">£20</li>
-					<li class="fifth-5">£20</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Olaplex Treatment</li>
-					<li class="second-5">£35</li>
-					<li class="third-5">£35</li>
-					<li class="fourth-5">£35</li>
-					<li class="fifth-5">£35</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Olaplex in Colour</li>
-					<li class="second-5">£45</li>
-					<li class="third-5">£45</li>
-					<li class="fourth-5">£45</li>
-					<li class="fifth-5">£45</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">K18 Hair Treatment</li>
-					<li class="second-5">£45</li>
-					<li class="third-5">£45</li>
-					<li class="fourth-5">£45</li>
-					<li class="fifth-5">£45</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Bridal Hair</li>
-					<li class="second-5">£</li>
-					<li class="third-5">£POQ</li>
-					<li class="fourth-5">£</li>
-					<li class="fifth-5">£</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Hair Extensions</li>
-					<li class="second-5">£</li>
-					<li class="third-5">£POQ</li>
-					<li class="fourth-5">£</li>
-					<li class="fifth-5">£</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Keratin Treatment</li>
-					<li class="second-5">£</li>
-					<li class="third-5">£POQ</li>
-					<li class="fourth-5">£</li>
-					<li class="fifth-5">£</li>
-				</ul>
-
-				<ul class="service-list">
-					<li class="first-5">Botox Hair Filler Treatment</li>
-					<li class="second-5">£</li>
-					<li class="third-5">£POQ</li>
-					<li class="fourth-5">£</li>
-					<li class="fifth-5">£</li>
-				</ul>
-			</div>
-
-			<div class="container padding service-condition">
-				<p>
-					<em
-						>POQ - Price on Quotation<br />
-						Long/Thick Hair is a £40 Supplement<br />
-						Keratin Treatment and Botox Hair Filler Treatment is priced on hair length and density and ranges from £200 - £240
-					</em>
-				</p>
-				<p>
-					<em
-						>COMPLIMENTARY HAIR CONSULTATIONS AVAILABLE FOR ALL HAIR SERVICES<br />
-						* Students receive a 10% discount on cut &amp; colour with a valid UNiDAYS ID (Excludes Saturday and Sunday)</em
-					>
-				</p>
-			</div>
-		</section>
-
-		<section id="policies">
-			<div class="policies">
-				<div class="container padding pt-12 pb-12">
-					<h4>Deposit Policy</h4>
-					<p class="small">We request a deposit of £25 from every guest booking a colour and cut service. This deposit will be used as part payment towards your service. If you fail to show up for your appointment, we reserve the right to retain your deposit in line with our cancellation policy.</p>
-					<h4>Cancellation Policy</h4>
-					<p class="small">We require 48 hours’ notice of cancellation for all our guests. If appointments are cancelled with less than 48 hours’ notice, then unfortunately, your deposit will be non-refundable. We completely understand that life’s little dramas can get in the way of scheduled appointments, and we can assure you that we will be sympathetic in certain circumstances.</p>
-					<p class="small">Regrettably, we have had to put these measures in place due to increasing numbers of no-shows, and late cancellations, which is costing the salon hundreds of pounds in lost revenue each month.</p>
-					<p class="small">We would like to thank you for your understanding and co-operation.</p>
-				</div>
-			</div>
-		</section>
-
-		<section id="make-up">
-			<div class="make-up">
-				<div style="background-color: #fad1bd">
-					<div class="container padding pt-12 pb-12">
-						<div class="text-block-grid">
-							<div class="full-width text-center">
-								<h2>Hair and Make-up Services</h2>
-								<p>Every bride wants to look and feel her best on the big day, therefore, a trial is reccomended to help create the look you want.</p>
-								<p>Bridal hair and make-up • £300</p>
-								<p>Trial hair and make-up • £100</p>
-								<p>Make-up only • £70 Special occasion, events, prom</p>
-								<p>Make-Up Lesson •£60 Eyelash strip • £8</p>
-								<p>We <strong>ONLY</strong> use luxury makeup brands</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="offers">
-			<div class="offers">
-				<div style="background-color: #e5e7e9">
-					<div class="container padding pt-12 pb-12">
-						<div class="text-block-grid">
-							<div class="full-width">
-								<h2 class="text-center">Offers</h2>
-								<p>We believe that amazing hairdressing should be affordable. Here’s how to get more out of your budget this season.</p>
-
-								<h3>New Clients</h3>
-								<p>New clients are treated to £10 off their first hair dressing service at Tila Studio West Hampstead (Tuesday-Friday). Please mention you are a new client when booking to take advantage of the £10 discount. We look forward to welcoming you to our Salon.</p>
-								<p class="small">Not valid on blowdries and treatments. Subject to stylist availability. This offer cannot be used in conjunction with any other offer. Quote “tila10” when booking via phone. Offer not valid on weekends or for the month of December.</p>
-
-								<h3>Recommend a friend</h3>
-								<p>Why not share the love! Give a gift card to a family member or a friend. When they visit our salon they will receive £10 off any cut and colour service, and, we will give exactly the same to you on your next visit.</p>
-
-								<p class="small">
-									*T&amp;Cs apply<br />
-									Not valid on blowdries and treatments. Subject to stylist availability. This offer cannot be used in conjunction with any other offer. Offer not valid on weekends or for the month of December.
-								</p>
-
-								<h3>Special Offer</h3>
-								<p>Students receive 10% off* (Monday-Thursday, Cut &amp; Colour)</p>
-								<p class="small">* Valid UNiDAYS Card required</p>
-
-								<h3>Gift Certificates</h3>
-								<p>The gift to gorgeous hair and make-up. Treat your special loved one’s to Tila Studio Gift Certificates.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="email-us">
-			<div class="bg-dark-grey">
-				<div class="container padding">
-					<div class="book-block">
-						<div class="book-block-text">
-							<h3>CHECK AVAILABILITY NOW</h3>
-						</div>
-
-						<div class="book-block-button">
-							<p>
-								<a href="mailto:info@tilahairstudio.com">
-									<button class="btn btn-clear">EMAIL US</button>
-								</a>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="social">
-			<div class="social-media-section-bg">
-				<div class="container pt-32 pb-32">
-					<div class="social-media-section text-white">
-						<div class="social-media-section-flex">
-							<div class="social-media-section-flex-item">
-								<h2 class="title">Let's be social</h2>
-							</div>
-
-							<div class="social-media-section-flex-item">
-								<ul class="social">
-									<li>
-										<a href="https://www.instagram.com/tilahairstudio/" target="_blank" aria-label="Instagram Link(Opens in a new tab)">
-											<img src="img/instagram.svg" alt="Instagram Icon" loading="lazy" />
-										</a>
-									</li>
-									<li>
-										<a href="https://en-gb.facebook.com/TilaStudio/" target="_blank" aria-label="Facebook Link(Opens in a new tab)">
-											<img src="img/facebook.svg" alt="Facebook Icon" loading="lazy" />
-										</a>
-									</li>
-									<li>
-										<a href="http://wa.link/lsn7fp" target="_blank" aria-label="YouTube Link(Opens in a new tab)">
-											<img src="img/whatsapp.svg" alt="YouTube Icon" loading="lazy" />
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section id="testimonials">
-			<div class="bg-cod-grey text-white text-center">
-				<div class="testimonials">
-					<div class="testimonials-slider pt-16 pb-16">
-						<h2>Testimonials</h2>
-						<div class="testimonials-slider__swiper swiper pt-8 pb-24">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<figure>
-										<blockquote>
-											<p>Excellent quality, amazing prices</p>
-										</blockquote>
-										<figcaption><cite>Dafina Zhubi</cite></figcaption>
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure>
-										<blockquote>
-											<p>Amazing service, amazing cut and colour</p>
-										</blockquote>
-										<figcaption><cite>Teresa Arcadipane</cite></figcaption>
-									</figure>
-								</div>
-								<div class="swiper-slide">
-									<figure>
-										<blockquote>
-											<p>I had a great head massage and a superb haircut</p>
-										</blockquote>
-										<figcaption><cite>Joseph Sayegh</cite></figcaption>
-									</figure>
-								</div>
-							</div>
-
-							<!-- PAGINATION -->
-							<div class="swiper-pagination testimonials-slider__swiper-pagination"></div>
-
-							<!-- AUTOPLAY PROGRESS -->
-							<div class="autoplay-progress">
-								<svg viewBox="0 0 48 48">
-									<circle cx="24" cy="24" r="20"></circle>
-								</svg>
-								<span></span>
-							</div>
-						</div>
-
-						<div class="testimonials-read-more">
-							<a href="https://www.google.com/search?q=Tila+Studio+Hair+%26+Makeup&amp;ludocid=4574812023654138167#lrd=0x0:0x3f7cff4c10174137,1" target="_blank">Click here to read more reviews</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer id="contact">
-			<div class="bg-cod-grey text-dusty-grey">
-				<div class="container padding">
-					<div class="contact pt-8 pb-8">
-						<div class="contact-flex">
-							<div class="contact-flex-item">
-								<h3>Contact Us</h3>
-								<p>
-									<a href="https://goo.gl/maps/g4cMQfmEoEF2" target="_blank">
-										78 Fortune Green Road<br />
-										London NW6 1DS
-									</a>
-								</p>
-								<p><a href="tel:02079981470">0207 9981 470</a></p>
-								<p><a href="mailto:info@tilahairstudio.com">info@tilahairstudio.com</a></p>
-								<p><a href="http://wa.link/lsn7fp">Click here for WhatsApp</a></p>
-							</div>
-
-							<div class="contact-flex-item">
-								<h3>Opening Hours</h3>
-								<p id="monday">Monday 10am - 7pm</p>
-								<p id="tuesday">Tuesday 10am - 7pm</p>
-								<p id="wednesday">Wednesday 10am - 7pm</p>
-								<p id="thursday">Thursday 10am - 7pm</p>
-								<p id="friday">Friday 10am - 7pm</p>
-								<p id="saturday">Saturday 9am - 6pm</p>
-								<p id="sunday">Sunday - Closed</p>
-							</div>
-						</div>
-					</div>
-					<div class="copyright pt-6 pb-6">
-						<div class="copyright-flex">
-							<div class="copyright-flex-item">
-								<p>Copyright &copy; <span id="date"></span> Tila Studio</p>
-							</div>
-							<div class="copyright-flex-item">
-								<p>
-									<a href="https://www.joesayegh.co.uk/">
-										Made with
-										<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.012 892">
-											<path d="M736.012,0q-67,0-125.5,30a289.314,289.314,0,0,0-98.5,82,289.324,289.324,0,0,0-98.5-82q-58.5-30-125.5-30-119,0-204,89.5T.012,304q1,69,29.5,129.5t77.5,102.5q3,3,9,8,10,9,170,154.5t205,185.5a31.563,31.563,0,0,0,42,0q34-30,185-167.5t197-178.5q51-42,80-103.5t29-131.5q0-125-84.5-214T736.012,0Z" />
-										</svg>
-										by Joe
-									</a>
-								</p>
-							</div>
-							<div class="copyright-flex-item">
-								<ul>
-									<li><a href="privacy.html">Privacy Policy</a></li>
-									<li><a href="#header">Back to top</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<!-- SALON IQ -->
-		<script type="text/javascript">
-			!(function (b, c) {
-				(b.saloniqid = '5b0212bb-991e-45e8-a63c-857a8a4e450a'), (b.saloniqsite = 'https://bookings.saloniq.co.uk');
-				// (b.saloniqid = 'f59f2d1e-1227-42a5-b70f-f1207d4d5b8d'), (b.saloniqsite = 'https://bookings.saloniq.co.uk');
-				var d,
-					g,
-					e = 'onlinebookingwidget-loader',
-					f = c.getElementsByTagName('script')[0];
-				c.getElementById(e) || ((d = c.createElement('script')), (d.id = e), (d.async = !0), (d.src = b.saloniqsite + '/scripts/' + e + '.js?d=' + Date.now()), (g = f ? f.parentNode : c.getElementsByTagName('head')[0]), g.insertBefore(d, f));
-			})(window, document);
-		</script>
-
-		<!-- SWIPER -->
-		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-		<script src="script.js"></script>
-	</body>
 </html>
