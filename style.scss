@@ -1462,6 +1462,11 @@ figure.effect-sadie:hover p {
 			&:last-of-type p {
 				margin-bottom: 0;
 			}
+
+			.small {
+				font-size: 14.4px;
+				font-size: 0.9rem;
+			}
 		}
 	}
 }
@@ -1469,6 +1474,7 @@ figure.effect-sadie:hover p {
 .copyright {
 	&-flex {
 		font-size: 11px;
+		font-size: 0.688rem;
 		letter-spacing: 0.5px;
 		text-transform: uppercase;
 		display: flex;
