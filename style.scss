@@ -792,7 +792,9 @@ button,
 	z-index: 100;
 	opacity: 0;
 	visibility: hidden;
-	transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
+	transition:
+		visibility 0.3s ease-in-out,
+		opacity 0.3s ease-in-out;
 
 	&.show {
 		opacity: 1;
@@ -1211,13 +1213,17 @@ figure.effect-sadie h3 {
 	width: 100%;
 	color: var(--white);
 	text-shadow: 2px 2px 1px #000;
-	transition: transform 0.35s, color 0.35s;
+	transition:
+		transform 0.35s,
+		color 0.35s;
 	transform: translate3d(0, -50%, 0);
 }
 
 figure.effect-sadie figcaption::before,
 figure.effect-sadie p {
-	transition: opacity 0.35s, transform 0.35s;
+	transition:
+		opacity 0.35s,
+		transform 0.35s;
 }
 
 figure.effect-sadie p {
